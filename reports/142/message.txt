@@ -1,1 +1,1 @@
-6 tests completed successfully, 38 failed. [Full report](https://github.com/SimiDCI/GLVisualizeCI.jl/blob/master/reports//Users/julia/.julia/v0.5/GLVisualizeCI/src/../reports/report.md)
+44 tests completed successfully, 0 failed. [Full report](https://github.com/SimiDCI/GLVisualizeCI.jl/blob/master/reports/142/report.md)

@@ -13,7 +13,6 @@ end
 
 function create_mosaic(io, folder, width = 150)
     images = filter(x-> endswith(x, ".jpg"), readdir(folder))
-    n = GLAbstraction.close_to_square(length(images))
     for im in images
         println(io, """<img src="$(image_url(joinpath(folder, im)))"
             alt="$(im)" width=$(width)px"/>
@@ -113,6 +112,6 @@ function test_and_record(full_folder)
         success = count(kd-> kd[2][:success], config.attributes)
         fails = length(config.files) - success
         print(io, "$success tests completed successfully, $fails failed. [Full report](")
-        println(io, "https://github.com/SimiDCI/GLVisualizeCI.jl/blob/master/reports/$(joinpath(dirname(full_folder), "report.md")))")
+        println(io, "https://github.com/SimiDCI/GLVisualizeCI.jl/blob/master/reports/$(joinpath(basename(full_folder), "report.md")))")
     end
 end
