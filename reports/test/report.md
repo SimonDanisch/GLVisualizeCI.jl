@@ -1,6 +1,6 @@
 ### Test Images:
 <img src="https://github.com/SimiDCI/GLVisualizeCI.jl/blob/master/reports/test/buttons.jpg?raw=true"
-    alt="buttons.jpg" style="width: 150px;"/>
+    alt="buttons.jpg" style="width: 50px;"/>
 
 <img src="https://github.com/SimiDCI/GLVisualizeCI.jl/blob/master/reports/test/camera.jpg?raw=true"
     alt="camera.jpg" style="width: 150px;"/>
