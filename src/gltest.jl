@@ -5,8 +5,14 @@ importall ExampleRunner
 using GLAbstraction, GLWindow, Colors
 using FileIO, GeometryTypes, Reactive, Images
 
+path, name = splitdir("test/lol/reports/test/test.png")
+path, dir = splitdir(path)
+joinpath(dir, name)
+
 function image_url(path)
-    "https://github.com/SimiDCI/GLVisualizeCI.jl/blob/master/reports/$(path)?raw=true"
+    path, name = splitdir(path)
+    path, dir = splitdir(path)
+    "https://github.com/SimiDCI/GLVisualizeCI.jl/blob/master/reports/$(joinpath(dir, name))?raw=true"
 end
 
 function create_mosaic(io, folder, width = 150)
@@ -14,7 +20,7 @@ function create_mosaic(io, folder, width = 150)
     n = GLAbstraction.close_to_square(length(images))
     for im in images
         println(io, """<img src="$(image_url(joinpath(folder, im)))"
-            alt="$(im)" style="width: $(width)px;"/>
+            alt="$(im)" width=$(width)px"/>
         """)
     end
 end
@@ -54,7 +60,7 @@ function test_and_record(folder)
     )
     GLWindow.set_visibility!(config.rootscreen, false)
     window = config.window
-    for path in config.files
+    for path in config.files[1:6]
         isopen(config.rootscreen) || break
         try
             println(basename(path))
@@ -90,15 +96,23 @@ function test_and_record(folder)
         end
         yield()
     end
-    open(joinpath(screencast_folder, "report.md"), "w") do io
+    open(joinpath(folder, "report.md"), "w") do io
         failures = filter(config.attributes) do k, dict
             !dict[:success]
         end
-        name_ex = map(failures) do k, dict
-            k => dict[:exception]
+        println(io, "### Test Images:")
+        create_mosaic(io, folder)
+        if !isempty(failures)
+            println(io, "### Failures:")
+            for (k, dict) in failures
+                println(io, "file: $k")
+                println(io, "$(dict[:exception])")
+            end
+        else
+            println(io, "No failures! :)")
         end
-
-
-
     end
 end
+
+
+test_and_record(Pkg.dir("GLVisualizeCI", "reports", "test"))
