@@ -2,6 +2,7 @@ module GLVisualizeCI
 
 import GitHub
 
+dir(paths...) = joinpath(dirname(@__FILE__), "..", paths...)
 # EventListener settings
 myauth = GitHub.authenticate(ENV["SIM_GITHUBAUTH"])
 mysecret = ENV["SIM_SECRET"]
@@ -29,7 +30,7 @@ error_params(err) = Dict(
 function handle_event(event)
     kind, payload, repo = event.kind, event.payload, event.repository
     if kind == "pull_request" && payload["action"] == "open"
-        println("sweeeeeeet!")
+
     end
 end
 # We can use Julia's `do` notation to set up the listener's handler function

@@ -5,10 +5,6 @@ importall ExampleRunner
 using GLAbstraction, GLWindow, Colors
 using FileIO, GeometryTypes, Reactive, Images
 
-path, name = splitdir("test/lol/reports/test/test.png")
-path, dir = splitdir(path)
-joinpath(dir, name)
-
 function image_url(path)
     path, name = splitdir(path)
     path, dir = splitdir(path)
@@ -25,7 +21,7 @@ function create_mosaic(io, folder, width = 150)
     end
 end
 
-function test_and_record(folder)
+function test_and_record(full_folder)
     files = [
         "introduction/rotate_robj.jl",
         "introduction/screens.jl",
@@ -55,12 +51,12 @@ function test_and_record(folder)
         record_image = true,
         files = files,
         thumbnail = false,
-        screencast_folder = folder,
+        screencast_folder = full_folder,
         resolution = (200, 200)
     )
     GLWindow.set_visibility!(config.rootscreen, false)
     window = config.window
-    for path in config.files[1:6]
+    for path in config.files
         isopen(config.rootscreen) || break
         try
             println(basename(path))
@@ -96,12 +92,12 @@ function test_and_record(folder)
         end
         yield()
     end
-    open(joinpath(folder, "report.md"), "w") do io
+    open(joinpath(full_folder, "report.md"), "w") do io
         failures = filter(config.attributes) do k, dict
             !dict[:success]
         end
         println(io, "### Test Images:")
-        create_mosaic(io, folder)
+        create_mosaic(io, full_folder)
         if !isempty(failures)
             println(io, "### Failures:")
             for (k, dict) in failures
@@ -112,7 +108,11 @@ function test_and_record(folder)
             println(io, "No failures! :)")
         end
     end
+
+    open(joinpath(full_folder, "message.txt"), "w") do io
+        success = count(kd-> kd[2][:success], config.attributes)
+        fails = length(config.files) - success
+        print(io, "$success tests completed successfully, $fails failed. [Full report](")
+        println(io, "https://github.com/SimiDCI/GLVisualizeCI.jl/blob/master/reports/$(joinpath(dirname(full_folder), "report.md")))")
+    end
 end
-
-
-test_and_record(Pkg.dir("GLVisualizeCI", "reports", "test"))
