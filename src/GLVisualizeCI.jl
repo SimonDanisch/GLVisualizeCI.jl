@@ -73,7 +73,7 @@ function handle_event(name, event, auth)
         push_status(pr)
         GitHub.create_status(repo, sha; auth = auth, params = Dict(
             "state" => "pending",
-            "context" => ci_name,
+            "context" => name,
             "description" => "Running CI...",
             "target_url" => target_url
         ))
@@ -109,7 +109,7 @@ function handle_event(name, event, auth)
         catch err
             GitHub.create_status(repo, sha; auth = myauth, params = Dict(
                 "state" => "error",
-                "context" => ci_name,
+                "context" => name,
                 "description" => "Error: $err",
                 "target_url" => target_url
             ))
@@ -137,7 +137,7 @@ function start(name, func = handle_event;
         myevents = ["pull_request"]
     )
     listener = GitHub.EventListener(
-        event-> handle_event(name, event),
+        event-> handle_event(name, event, myauth),
         auth = myauth,
         secret = mysecret,
         repos = myrepos,
