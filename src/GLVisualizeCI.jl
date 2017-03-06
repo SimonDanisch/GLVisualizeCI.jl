@@ -68,6 +68,7 @@ function handle_event(name, event)
     else
         return HttpCommon.Response(500)
     end
+    pr = event.payload["pull_request"]["number"]
     package, jl = splitext(get(repo.name))
     target_url = report_url(repo, pr)
     path = report_folder(package, pr)
