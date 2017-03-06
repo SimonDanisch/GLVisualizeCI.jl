@@ -61,73 +61,71 @@ end
 
 function handle_event(name, event)
     kind, payload, repo = event.kind, event.payload, event.repository
-    sha = if event.kind == "push"
-        event.payload["after"]
-    elseif event.kind == "pull_request"
-        event.payload["pull_request"]["head"]["sha"]
+    if kind == "pull_request"
+        sha = event.payload["pull_request"]["head"]["sha"]
+        pr = string(event.payload["pull_request"]["number"])
+        package, jl = splitext(get(repo.name))
+        target_url = report_url(repo, pr)
+        path = report_folder(package, pr)
+        path1, _ = splitdir(path)
+        isdir(path1) || mkdir(path1)
+        isdir(path) || mkdir(path)
+        push_status(pr)
+        GitHub.create_status(repo, sha; auth = myauth, params = Dict(
+            "state" => "pending",
+            "context" => ci_name,
+            "description" => "Running CI...",
+            "target_url" => target_url
+        ))
+
+        try
+            ORIGINAL_STDOUT = STDOUT
+            out_rd, out_wr = redirect_stdout()
+
+
+            ORIGINAL_STDERR = STDERR
+            err_rd, err_wr = redirect_stderr()
+            err_reader = @async readstring(err_rd)
+
+            ENV["CI_REPORT_DIR"] = path
+            ENV["CI"] = "true"
+            test_pr(repo, pr)
+            log_stdio = readstring(out_rd)
+            log_errsdio = readstring(err_rd)
+            close(out_rd); close(err_rd)
+            open(joinpath(path, "stdiolog.txt"), "w") do io
+                println(io, log_stdio)
+            end
+            open(joinpath(path, "errorlog.txt"), "w") do io
+                println(io, log_errsdio)
+            end
+
+            @async wait(out_reader)
+            REDIRECTED_STDOUT = STDOUT
+            out_stream = redirect_stdout(ORIGINAL_STDOUT)
+            @async wait(err_reader)
+            REDIRECTED_STDERR = STDERR
+            err_stream = redirect_stderr(ORIGINAL_STDERR)
+        catch err
+            GitHub.create_status(repo, sha; auth = myauth, params = Dict(
+                "state" => "error",
+                "context" => ci_name,
+                "description" => "Error: $err",
+                "target_url" => target_url
+            ))
+            return HttpCommon.Response(500)
+        end
+
+        GitHub.create_status(repo, sha; auth = myauth, params = Dict(
+            "state" => "success",
+            "context" => "CIer",
+            "description" => "CI complete!",
+            "target_url" => url
+        ))
+        return HttpCommon.Response(202, "ci request job submission")
     else
         return HttpCommon.Response(500)
     end
-    pr = string(event.payload["pull_request"]["number"])
-    package, jl = splitext(get(repo.name))
-    target_url = report_url(repo, pr)
-    path = report_folder(package, pr)
-    path1, _ = splitdir(path)
-    isdir(path1) || mkdir(path1)
-    isdir(path) || mkdir(path)
-    push_status(pr)
-    GitHub.create_status(repo, sha; auth = myauth, params = Dict(
-        "state" => "pending",
-        "context" => ci_name,
-        "description" => "Running CI...",
-        "target_url" => target_url
-    ))
-
-    try
-        ORIGINAL_STDOUT = STDOUT
-        out_rd, out_wr = redirect_stdout()
-
-
-        ORIGINAL_STDERR = STDERR
-        err_rd, err_wr = redirect_stderr()
-        err_reader = @async readstring(err_rd)
-
-        ENV["CI_REPORT_DIR"] = path
-        ENV["CI"] = "true"
-        test_pr(repo, pr)
-        log_stdio = readstring(out_rd)
-        log_errsdio = readstring(err_rd)
-        close(out_rd); close(err_rd)
-        open(joinpath(path, "stdiolog.txt"), "w") do io
-            println(io, log_stdio)
-        end
-        open(joinpath(path, "errorlog.txt"), "w") do io
-            println(io, log_errsdio)
-        end
-
-        @async wait(out_reader)
-        REDIRECTED_STDOUT = STDOUT
-        out_stream = redirect_stdout(ORIGINAL_STDOUT)
-        @async wait(err_reader)
-        REDIRECTED_STDERR = STDERR
-        err_stream = redirect_stderr(ORIGINAL_STDERR)
-    catch err
-        GitHub.create_status(repo, sha; auth = myauth, params = Dict(
-            "state" => "error",
-            "context" => ci_name,
-            "description" => "Error: $err",
-            "target_url" => target_url
-        ))
-        return HttpCommon.Response(500)
-    end
-
-    GitHub.create_status(repo, sha; auth = myauth, params = Dict(
-        "state" => "success",
-        "context" => "CIer",
-        "description" => "CI complete!",
-        "target_url" => url
-    ))
-    return HttpCommon.Response(202, "ci request job submission")
 end
 
 function start(name, func = handle_event;
