@@ -133,8 +133,8 @@ function start(name, func = handle_event;
         host = IPv4(128, 30, 87, 54),
         port = 8000,
         myrepos = [GitHub.Repo("JuliaGL/GLVisualize.jl")],
-        myauth = GitHub.authenticate(ENV["GITHUB_AUTH"])
-        mysecret = ENV["GITHUB_SECRET"]
+        myauth = GitHub.authenticate(ENV["GITHUB_AUTH"]),
+        mysecret = ENV["GITHUB_SECRET"],
         myevents = ["pull_request"]
     )
 
