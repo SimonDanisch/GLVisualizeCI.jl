@@ -1,3 +1,6 @@
+Pkg.checkout("GLFW", "sd/warn")
+ENV["DISPLAY"] = ":0"
+
 using GLVisualize
 include(GLVisualize.dir("examples", "ExampleRunner.jl"))
 using ExampleRunner
