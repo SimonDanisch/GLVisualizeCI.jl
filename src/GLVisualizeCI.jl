@@ -2,7 +2,7 @@ module GLVisualizeCI
 
 import GitHub
 
-dir(paths...) = joinpath(dirname(@__FILE__), "..", paths...)
+dir(paths...) = normpath(joinpath(dirname(@__FILE__), "..", paths...))
 
 function push_status(pr)
     cd(dir()) do
@@ -31,13 +31,13 @@ end
 gitclone!(repo, path) = run(`git clone https://github.com/$(repo).git $(path)`)
 
 
-function test_pr(repo, pr)
+function test_pr(package, repo, pr)
     mktempdir() do path
         cd(homedir()) # make sure, we're in a concrete folder
         # init a new julia package repository
         ENV["JULIA_PKGDIR"] = path
         Pkg.init()
-        package, jl = splitext(get(repo.name))
+
         builddir = Pkg.dir(package)
         gitclone!(repo, builddir)
         cd(builddir)
@@ -68,12 +68,13 @@ function handle_event(name, event)
     else
         return HttpCommon.Response(500)
     end
-
+    package, jl = splitext(get(repo.name))
     target_url = report_url(repo, pr)
-    path = report_folder(repo, pr)
+    path = report_folder(package, pr)
+    path1, _ = splitdir(path)
+    isdir(path1) || mkdir(path1)
     isdir(path) || mkdir(path)
     push_status(pr)
-
     GitHub.create_status(repo, sha; auth = myauth, params = Dict(
         "state" => "pending",
         "context" => ci_name,
@@ -128,16 +129,14 @@ function handle_event(name, event)
     return HttpCommon.Response(202, "ci request job submission")
 end
 
-# We can use Julia's `do` notation to set up the listener's handler function
 function start(name, func = handle_event;
         host = IPv4(128, 30, 87, 54),
         port = 8000,
         myrepos = [GitHub.Repo("JuliaGL/GLVisualize.jl")],
-        myauth = GitHub.authenticate(ENV["GITHUB_AUTH"])
-        mysecret = ENV["GITHUB_SECRET"]
+        myauth = GitHub.authenticate(ENV["GITHUB_AUTH"]),
+        mysecret = ENV["GITHUB_SECRET"],
         myevents = ["pull_request"]
     )
-
     listener = GitHub.EventListener(
         event-> handle_event(name, event),
         auth = myauth,
@@ -145,7 +144,6 @@ function start(name, func = handle_event;
         repos = myrepos,
         events = myevents
     )
-    # Start the listener on localhost at port 8000
     GitHub.run(listener, host = host, port = port)
 end
 
