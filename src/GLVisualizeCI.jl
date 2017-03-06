@@ -59,7 +59,7 @@ function test_pr(package, repo, pr)
 end
 
 
-function handle_event(name, event)
+function handle_event(name, event, auth)
     kind, payload, repo = event.kind, event.payload, event.repository
     if kind == "pull_request"
         sha = event.payload["pull_request"]["head"]["sha"]
@@ -71,7 +71,7 @@ function handle_event(name, event)
         isdir(path1) || mkdir(path1)
         isdir(path) || mkdir(path)
         push_status(pr)
-        GitHub.create_status(repo, sha; auth = myauth, params = Dict(
+        GitHub.create_status(repo, sha; auth = auth, params = Dict(
             "state" => "pending",
             "context" => ci_name,
             "description" => "Running CI...",
