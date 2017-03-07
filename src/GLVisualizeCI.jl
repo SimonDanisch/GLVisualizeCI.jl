@@ -1,6 +1,6 @@
 module GLVisualizeCI
 
-import GitHub
+import GitHub, HttpCommon
 
 dir(paths...) = normpath(joinpath(dirname(@__FILE__), "..", paths...))
 
