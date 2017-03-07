@@ -7,28 +7,21 @@ dir(paths...) = normpath(joinpath(dirname(@__FILE__), "..", paths...))
 function push_status(pr)
     cd(GLVisualizeCI.dir()) do
         try
-            run(`git add -A`)
-            run(`git commit -m "data for $(pr)"`)
             run(`git pull origin master`)
-            run(`git push origin HEAD`)
+            run(`git add -A .`)
+            run(`git commit -m "data for $(pr)"`)
+            run(`git push origin master`)
         catch e
             warn("couldn't update report: $e")
         end
     end
 end
 
-function image_url(path)
-    path, name = splitdir(path)
-    path, dir = splitdir(path)
-    "https://github.com/SimiDCI/GLVisualizeCI.jl/blob/master/reports/$(joinpath(dir, name))?raw=true"
+
+function report_url(ci, repo, pr)
+    "https://github.com/SimiDCI/GLVisualizeCI.jl/blob/master/reports/$ci/$repo/$pr"
 end
 
-function report_url(repo, pr)
-    "https://github.com/SimiDCI/GLVisualizeCI.jl/blob/master/reports/$repo/$pr"
-end
-function report_folder(repo, pr)
-    dir("reports", repo, pr)
-end
 
 gitclone!(repo, path) = run(`git clone https://github.com/$(repo).git $(path)`)
 
@@ -88,18 +81,24 @@ end
 
 function handle_event(name, event, auth)
     kind, payload, repo = event.kind, event.payload, event.repository
-    @show repo
-    if kind == "pull_request"
+
+    if kind == "pull_request" &&
         sha = event.payload["pull_request"]["head"]["sha"]
         pr = string(event.payload["pull_request"]["number"])
         package, jl = splitext(get(repo.name))
-        target_url = report_url(package, pr)
+
+        target_url = report_url(name, package, pr)
         @show target_url
-        path = report_folder(package, pr)
-        path1, _ = splitdir(path)
-        isdir(path1) || mkdir(path1)
+
+        path = dir("reports", name)
         isdir(path) || mkdir(path)
+        path = dir("reports", name, repo)
+        isdir(path) || mkdir(path)
+        path = dir("reports", name, repo, pr)
+        isdir(path) || mkdir(path)
+
         push_status(pr)
+
         GitHub.create_status(repo, sha; auth = auth, params = Dict(
             "state" => "pending",
             "context" => name,
