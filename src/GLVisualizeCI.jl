@@ -93,7 +93,7 @@ function handle_event(name, event, auth)
 
             ENV["CI_REPORT_DIR"] = path
             ENV["CI"] = "true"
-            test_pr(repo, pr)
+            test_pr(package, repo, pr)
             # log_stdio = readstring(out_rd)
             # log_errsdio = readstring(err_rd)
             # close(out_rd); close(err_rd)
@@ -111,7 +111,7 @@ function handle_event(name, event, auth)
             # REDIRECTED_STDERR = STDERR
             # err_stream = redirect_stderr(ORIGINAL_STDERR)
         catch err
-            GitHub.create_status(repo, sha; auth = myauth, params = Dict(
+            GitHub.create_status(repo, sha; auth = auth, params = Dict(
                 "state" => "error",
                 "context" => name,
                 "description" => "Error: $err",
@@ -120,7 +120,7 @@ function handle_event(name, event, auth)
             return HttpCommon.Response(500)
         end
 
-        GitHub.create_status(repo, sha; auth = myauth, params = Dict(
+        GitHub.create_status(repo, sha; auth = auth, params = Dict(
             "state" => "success",
             "context" => "CIer",
             "description" => "CI complete!",
