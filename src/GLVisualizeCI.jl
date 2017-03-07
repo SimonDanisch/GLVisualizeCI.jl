@@ -5,10 +5,14 @@ import GitHub
 dir(paths...) = normpath(joinpath(dirname(@__FILE__), "..", paths...))
 
 function push_status(pr)
-    cd(dir()) do
-        run(`git add -A`)
-        run(`git commit -m $("data for $pr")`)
-        run(`git push origin HEAD`)
+    cd(GLVisualizeCI.dir()) do
+        try
+            run(`git add -A`)
+            run(`git commit -m "data for $pr"`)
+            run(`git push origin HEAD`)
+        catch e
+            warn("couldn't update report: $e")
+        end
     end
 end
 
