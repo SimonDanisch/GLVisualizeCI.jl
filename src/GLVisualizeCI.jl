@@ -79,7 +79,7 @@ function handle_event(name, event, auth)
             "state" => "pending",
             "context" => name,
             "description" => "Running CI...",
-            "target_url" => target_url
+            #"target_url" => target_url
         ))
 
         #try
@@ -124,9 +124,9 @@ function handle_event(name, event, auth)
             "state" => "success",
             "context" => "CIer",
             "description" => "CI complete!",
-            "target_url" => url
+            #"target_url" => target_url
         ))
-        return HttpCommon.Response(202, "ci request job submission")
+        return HttpCommon.Response(202, "success")
     else
         return HttpCommon.Response(500)
     end
