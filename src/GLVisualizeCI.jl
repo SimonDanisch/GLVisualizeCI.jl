@@ -82,7 +82,7 @@ end
 function handle_event(name, event, auth)
     kind, payload, repo = event.kind, event.payload, event.repository
 
-    if kind == "pull_request" &&
+    if kind == "pull_request" && payload["action"] != "closed"
         sha = event.payload["pull_request"]["head"]["sha"]
         pr = string(event.payload["pull_request"]["number"])
         package, jl = splitext(get(repo.name))
