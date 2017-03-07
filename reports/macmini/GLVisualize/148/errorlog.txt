@@ -1,0 +1,311 @@
+[1m[34mINFO: Initializing package repository /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5
+[0m[1m[34mINFO: Cloning METADATA from https://github.com/JuliaLang/METADATA.jl
+[0mCloning into '/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize'...
+[1m[34mINFO: Cloning cache of AxisAlgorithms from https://github.com/timholy/AxisAlgorithms.jl.git
+[0m[1m[34mINFO: Cloning cache of AxisArrays from https://github.com/JuliaArrays/AxisArrays.jl.git
+[0m[1m[34mINFO: Cloning cache of BinDeps from https://github.com/JuliaLang/BinDeps.jl.git
+[0m[1m[34mINFO: Cloning cache of Calculus from https://github.com/johnmyleswhite/Calculus.jl.git
+[0m[1m[34mINFO: Cloning cache of CatIndices from https://github.com/JuliaArrays/CatIndices.jl.git
+[0m[1m[34mINFO: Cloning cache of ColorTypes from https://github.com/JuliaGraphics/ColorTypes.jl.git
+[0m[1m[34mINFO: Cloning cache of ColorVectorSpace from https://github.com/JuliaGraphics/ColorVectorSpace.jl.git
+[0m[1m[34mINFO: Cloning cache of Colors from https://github.com/JuliaGraphics/Colors.jl.git
+[0m[1m[34mINFO: Cloning cache of Compat from https://github.com/JuliaLang/Compat.jl.git
+[0m[1m[34mINFO: Cloning cache of ComputationalResources from https://github.com/timholy/ComputationalResources.jl.git
+[0m[1m[34mINFO: Cloning cache of CoordinateTransformations from https://github.com/FugroRoames/CoordinateTransformations.jl.git
+[0m[1m[34mINFO: Cloning cache of CustomUnitRanges from https://github.com/JuliaArrays/CustomUnitRanges.jl.git
+[0m[1m[34mINFO: Cloning cache of DataStructures from https://github.com/JuliaCollections/DataStructures.jl.git
+[0m[1m[34mINFO: Cloning cache of DualNumbers from https://github.com/JuliaDiff/DualNumbers.jl.git
+[0m[1m[34mINFO: Cloning cache of FFTViews from https://github.com/JuliaArrays/FFTViews.jl.git
+[0m[1m[34mINFO: Cloning cache of FileIO from https://github.com/JuliaIO/FileIO.jl.git
+[0m[1m[34mINFO: Cloning cache of FixedPointNumbers from https://github.com/JuliaMath/FixedPointNumbers.jl.git
+[0m[1m[34mINFO: Cloning cache of FixedSizeArrays from https://github.com/SimonDanisch/FixedSizeArrays.jl.git
+[0m[1m[34mINFO: Cloning cache of FreeType from https://github.com/JuliaGraphics/FreeType.jl.git
+[0m[1m[34mINFO: Cloning cache of GLAbstraction from https://github.com/JuliaGL/GLAbstraction.jl.git
+[0m[1m[34mINFO: Cloning cache of GLFW from https://github.com/JuliaGL/GLFW.jl.git
+[0m[1m[34mINFO: Cloning cache of GLWindow from https://github.com/JuliaGL/GLWindow.jl.git
+[0m[1m[34mINFO: Cloning cache of GeometryTypes from https://github.com/JuliaGeometry/GeometryTypes.jl.git
+[0m[1m[34mINFO: Cloning cache of Graphics from https://github.com/JuliaGraphics/Graphics.jl.git
+[0m[1m[34mINFO: Cloning cache of Homebrew from https://github.com/JuliaPackaging/Homebrew.jl.git
+[0m[1m[34mINFO: Cloning cache of ImageAxes from https://github.com/JuliaImages/ImageAxes.jl.git
+[0m[1m[34mINFO: Cloning cache of ImageCore from https://github.com/JuliaImages/ImageCore.jl.git
+[0m[1m[34mINFO: Cloning cache of ImageFiltering from https://github.com/JuliaImages/ImageFiltering.jl.git
+[0m[1m[34mINFO: Cloning cache of ImageMetadata from https://github.com/JuliaImages/ImageMetadata.jl.git
+[0m[1m[34mINFO: Cloning cache of ImageTransformations from https://github.com/JuliaImages/ImageTransformations.jl.git
+[0m[1m[34mINFO: Cloning cache of Images from https://github.com/JuliaImages/Images.jl.git
+[0m[1m[34mINFO: Cloning cache of IndirectArrays from https://github.com/JuliaArrays/IndirectArrays.jl.git
+[0m[1m[34mINFO: Cloning cache of Interpolations from https://github.com/tlycken/Interpolations.jl.git
+[0m[1m[34mINFO: Cloning cache of IntervalSets from https://github.com/JuliaMath/IntervalSets.jl.git
+[0m[1m[34mINFO: Cloning cache of Iterators from https://github.com/JuliaCollections/Iterators.jl.git
+[0m[1m[34mINFO: Cloning cache of JSON from https://github.com/JuliaIO/JSON.jl.git
+[0m[1m[34mINFO: Cloning cache of MacroTools from https://github.com/MikeInnes/MacroTools.jl.git
+[0m[1m[34mINFO: Cloning cache of MappedArrays from https://github.com/JuliaArrays/MappedArrays.jl.git
+[0m[1m[34mINFO: Cloning cache of MeshIO from https://github.com/JuliaIO/MeshIO.jl.git
+[0m[1m[34mINFO: Cloning cache of ModernGL from https://github.com/JuliaGL/ModernGL.jl.git
+[0m[1m[34mINFO: Cloning cache of NaNMath from https://github.com/mlubin/NaNMath.jl.git
+[0m[1m[34mINFO: Cloning cache of OffsetArrays from https://github.com/alsam/OffsetArrays.jl.git
+[0m[1m[34mINFO: Cloning cache of Packing from https://github.com/JuliaGeometry/Packing.jl.git
+[0m[1m[34mINFO: Cloning cache of Quaternions from https://github.com/JuliaGeometry/Quaternions.jl.git
+[0m[1m[34mINFO: Cloning cache of RangeArrays from https://github.com/JuliaArrays/RangeArrays.jl.git
+[0m[1m[34mINFO: Cloning cache of Ratios from https://github.com/timholy/Ratios.jl.git
+[0m[1m[34mINFO: Cloning cache of Reactive from https://github.com/JuliaGizmos/Reactive.jl.git
+[0m[1m[34mINFO: Cloning cache of Reexport from https://github.com/simonster/Reexport.jl.git
+[0m[1m[34mINFO: Cloning cache of Rotations from https://github.com/FugroRoames/Rotations.jl.git
+[0m[1m[34mINFO: Cloning cache of SHA from https://github.com/staticfloat/SHA.jl.git
+[0m[1m[34mINFO: Cloning cache of SIUnits from https://github.com/Keno/SIUnits.jl.git
+[0m[1m[34mINFO: Cloning cache of ShowItLikeYouBuildIt from https://github.com/JuliaArrays/ShowItLikeYouBuildIt.jl.git
+[0m[1m[34mINFO: Cloning cache of SignedDistanceFields from https://github.com/JuliaGraphics/SignedDistanceFields.jl.git
+[0m[1m[34mINFO: Cloning cache of SimpleTraits from https://github.com/mauro3/SimpleTraits.jl.git
+[0m[1m[34mINFO: Cloning cache of SpecialFunctions from https://github.com/JuliaMath/SpecialFunctions.jl.git
+[0m[1m[34mINFO: Cloning cache of StaticArrays from https://github.com/JuliaArrays/StaticArrays.jl.git
+[0m[1m[34mINFO: Cloning cache of StatsBase from https://github.com/JuliaStats/StatsBase.jl.git
+[0m[1m[34mINFO: Cloning cache of TexExtensions from https://github.com/Keno/TexExtensions.jl.git
+[0m[1m[34mINFO: Cloning cache of TiledIteration from https://github.com/JuliaArrays/TiledIteration.jl.git
+[0m[1m[34mINFO: Cloning cache of URIParser from https://github.com/JuliaWeb/URIParser.jl.git
+[0m[1m[34mINFO: Cloning cache of UnicodeFun from https://github.com/SimonDanisch/UnicodeFun.jl.git
+[0m[1m[34mINFO: Cloning cache of WoodburyMatrices from https://github.com/timholy/WoodburyMatrices.jl.git
+[0m[1m[34mINFO: Installing AxisAlgorithms v0.1.6
+[0m[1m[34mINFO: Installing AxisArrays v0.0.5
+[0m[1m[34mINFO: Installing BinDeps v0.4.7
+[0m[1m[34mINFO: Installing Calculus v0.2.1
+[0m[1m[34mINFO: Installing CatIndices v0.0.2
+[0m[1m[34mINFO: Installing ColorTypes v0.3.4
+[0m[1m[34mINFO: Installing ColorVectorSpace v0.4.0
+[0m[1m[34mINFO: Installing Colors v0.7.3
+[0m[1m[34mINFO: Installing Compat v0.20.0
+[0m[1m[34mINFO: Installing ComputationalResources v0.0.2
+[0m[1m[34mINFO: Installing CoordinateTransformations v0.4.0
+[0m[1m[34mINFO: Installing CustomUnitRanges v0.0.4
+[0m[1m[34mINFO: Installing DataStructures v0.5.3
+[0m[1m[34mINFO: Installing DualNumbers v0.3.0
+[0m[1m[34mINFO: Installing FFTViews v0.0.2
+[0m[1m[34mINFO: Installing FileIO v0.3.0
+[0m[1m[34mINFO: Installing FixedPointNumbers v0.3.4
+[0m[1m[34mINFO: Installing FixedSizeArrays v0.2.5
+[0m[1m[34mINFO: Installing FreeType v1.2.0
+[0m[1m[34mINFO: Installing GLAbstraction v0.3.1
+[0m[1m[34mINFO: Installing GLFW v1.2.2
+[0m[1m[34mINFO: Installing GLWindow v0.3.2
+[0m[1m[34mINFO: Installing GeometryTypes v0.2.2
+[0m[1m[34mINFO: Installing Graphics v0.1.4
+[0m[1m[34mINFO: Installing Homebrew v0.4.2
+[0m[1m[34mINFO: Installing ImageAxes v0.1.1
+[0m[1m[34mINFO: Installing ImageCore v0.1.4
+[0m[1m[34mINFO: Installing ImageFiltering v0.1.2
+[0m[1m[34mINFO: Installing ImageMetadata v0.2.1
+[0m[1m[34mINFO: Installing ImageTransformations v0.1.0
+[0m[1m[34mINFO: Installing Images v0.8.0
+[0m[1m[34mINFO: Installing IndirectArrays v0.1.1
+[0m[1m[34mINFO: Installing Interpolations v0.3.8
+[0m[1m[34mINFO: Installing IntervalSets v0.0.3
+[0m[1m[34mINFO: Installing Iterators v0.3.0
+[0m[1m[34mINFO: Installing JSON v0.8.3
+[0m[1m[34mINFO: Installing MacroTools v0.3.6
+[0m[1m[34mINFO: Installing MappedArrays v0.0.6
+[0m[1m[34mINFO: Installing MeshIO v0.0.6
+[0m[1m[34mINFO: Installing ModernGL v0.1.1
+[0m[1m[34mINFO: Installing NaNMath v0.2.2
+[0m[1m[34mINFO: Installing OffsetArrays v0.2.14
+[0m[1m[34mINFO: Installing Packing v0.0.4
+[0m[1m[34mINFO: Installing Quaternions v0.1.1
+[0m[1m[34mINFO: Installing RangeArrays v0.1.2
+[0m[1m[34mINFO: Installing Ratios v0.0.4
+[0m[1m[34mINFO: Installing Reactive v0.3.7
+[0m[1m[34mINFO: Installing Reexport v0.0.3
+[0m[1m[34mINFO: Installing Rotations v0.3.5
+[0m[1m[34mINFO: Installing SHA v0.3.2
+[0m[1m[34mINFO: Installing SIUnits v0.1.0
+[0m[1m[34mINFO: Installing ShowItLikeYouBuildIt v0.0.1
+[0m[1m[34mINFO: Installing SignedDistanceFields v0.1.0
+[0m[1m[34mINFO: Installing SimpleTraits v0.3.0
+[0m[1m[34mINFO: Installing SpecialFunctions v0.1.1
+[0m[1m[34mINFO: Installing StaticArrays v0.3.0
+[0m[1m[34mINFO: Installing StatsBase v0.13.1
+[0m[1m[34mINFO: Installing TexExtensions v0.0.3
+[0m[1m[34mINFO: Installing TiledIteration v0.0.2
+[0m[1m[34mINFO: Installing URIParser v0.1.8
+[0m[1m[34mINFO: Installing UnicodeFun v0.0.2
+[0m[1m[34mINFO: Installing WoodburyMatrices v0.2.2
+[0m[1m[34mINFO: Building Homebrew
+[0m[1m[34mINFO: Downloading brew...
+[0m######################################################################## 100.0%############################                                              39.7%######################################################################## 100.0%
+From https://github.com/Homebrew/brew
+ * [new branch]      master     -> origin/master
+ * [new tag]         1.1.11     -> 1.1.11
+Cloning into '/private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/Homebrew/deps/usr/Library/Taps/homebrew/homebrew-core'...
+Cloning into '/private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/Homebrew/deps/usr/Library/Taps/staticfloat/homebrew-juliadeps'...
+Cloning into '/private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/Homebrew/deps/usr/Library/Taps/staticfloat/homebrew-juliatranslated'...
+[1m[34mINFO: Building FreeType
+[0mWarning: Already linked: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/Homebrew/deps/usr/Cellar/libpng/1.6.28
+Warning: Already linked: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/Homebrew/deps/usr/Cellar/freetype/2.7.1
+[1m[34mINFO: Building GLFW
+[0mWarning: Already linked: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/Homebrew/deps/usr/Cellar/glfw/3.2.1
+[1m[34mINFO: Package database updated
+[0m[1m[34mINFO: Building Homebrew
+[0m[1m[34mINFO: Building GLFW
+[0m[1m[34mINFO: Building FreeType
+[0m[1m[34mINFO: Computing test dependencies for GLVisualize...
+[0m[1m[34mINFO: Cloning cache of Contour from https://github.com/tlycken/Contour.jl.git
+[0m[1m[34mINFO: Cloning cache of DocStringExtensions from https://github.com/JuliaDocs/DocStringExtensions.jl.git
+[0m[1m[34mINFO: Cloning cache of Highlights from https://github.com/JuliaDocs/Highlights.jl.git
+[0m[1m[34mINFO: Cloning cache of ImageMagick from https://github.com/JuliaIO/ImageMagick.jl.git
+[0m[1m[34mINFO: Installing Contour v0.2.0
+[0m[1m[34mINFO: Installing DocStringExtensions v0.3.1
+[0m[1m[34mINFO: Installing Highlights v0.2.1
+[0m[1m[34mINFO: Installing ImageMagick v0.2.2
+[0m[1m[34mINFO: Building Homebrew
+[0m[1m[34mINFO: Building ImageMagick
+[0mWarning: Already linked: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/Homebrew/deps/usr/Cellar/xz/5.2.3
+Warning: Already linked: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/Homebrew/deps/usr/Cellar/jpeg/8d
+Warning: Already linked: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/Homebrew/deps/usr/Cellar/libtiff/4.0.7_2
+Warning: Already linked: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/Homebrew/deps/usr/Cellar/libtool/2.4.6_1
+[1m[34mINFO: Testing GLVisualize
+[0mPrevious HEAD position was 38cc239... Merge pull request #101 from JuliaGL/sd/static
+Switched to a new branch 'sd/warn'
+Previous HEAD position was be433da... remove failing
+Switched to a new branch 'sd/linenumbers'
+[1m[31mWARNING: Cocoa: Failed to retrieve display name[0m
+WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GeometryTypes/src/typealias.jl:90
+[1m[31mWARNING: Cocoa: Failed to retrieve display name[0m
+[1m[31mWARNING: Cocoa: Failed to retrieve display name[0m
+WARNING: ImageMetadata.Image is deprecated, use ImageMetadata.ImageMeta instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/src/utils.jl:8
+WARNING: ImageMetadata.Image is deprecated, use ImageMetadata.ImageMeta instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/src/visualize/image_like.jl:1
+WARNING: ImageMetadata.Image is deprecated, use ImageMetadata.ImageMeta instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/src/visualize/image_like.jl:3
+WARNING: ImageMetadata.Image is deprecated, use ImageMetadata.ImageMeta instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/src/visualize/image_like.jl:480
+WARNING: ImageMetadata.Image is deprecated, use ImageMetadata.ImageMeta instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/src/visualize/image_like.jl:481
+WARNING: ImageMetadata.Image is deprecated, use ImageMetadata.ImageMeta instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/src/visualize/image_like.jl:480
+WARNING: ImageMetadata.Image is deprecated, use ImageMetadata.ImageMeta instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/src/visualize/image_like.jl:481
+WARNING: ImageMetadata.Image is deprecated, use ImageMetadata.ImageMeta instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/src/visualize/particles.jl:480
+WARNING: ImageMetadata.Image is deprecated, use ImageMetadata.ImageMeta instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/src/visualize/particles.jl:481
+[1m[31mWARNING: Cocoa: Failed to retrieve display name[0m
+[1m[31mWARNING: Plots.jl is not installed, excluding a lot of interesting examples from the tests
+    and a nice summary.
+Please consider doing: `Pkg.add("Plots"); Pkg.checkout("Plots", "dev")`[0m
+WARNING: could not attach metadata for @simd loop.
+[1m[31mWARNING: OpenGL debug message callback not available on osx[0m
+[1m[34mINFO: Caching fonts, this may take a while. Needed only on first run!
+[0m[1m[31mWARNING: Cocoa: Failed to retrieve display name[0m
+[1m[31mWARNING: imfilter_gaussian(img, sigma; kwargs...) is deprecated; use `imfilter(img, KernelFactors.IIRGaussian(sigma; kwargs...))` instead, possibly with `NA()`[0m
+ in depwarn(::String, ::Symbol) at ./deprecated.jl:64
+ in #imfilter_gaussian#33(::Bool, ::Void, ::Function, ::Array{ColorTypes.RGBA{Float32},2}, ::Array{Float32,1}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/ImageFiltering/src/deprecated.jl:77
+ in imfilter_gaussian(::Array{ColorTypes.RGBA{Float32},2}, ::Array{Float32,1}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/ImageFiltering/src/deprecated.jl:72
+ in myfilter(::Array{ColorTypes.RGBA{Float32},2}, ::Float32) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/examples/gui/image_processing.jl:33
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/test/test_static.jl:74 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:262
+ in _start() at ./client.jl:318
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/examples/gui/image_processing.jl, in expression starting on line 39
+WARNING: could not attach metadata for @simd loop.
+WARNING: could not attach metadata for @simd loop.
+LoadError: UndefVarError: all_docs not defined
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/test/test_static.jl:74 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:262
+ in _start() at ./client.jl:318
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/examples/documentation/documentation.jl, in expression starting on line 9WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+in merge at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GeometryTypes/src/meshes.jl
+WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+in merge at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/GeometryTypes/src/meshes.jl
+WARNING: could not attach metadata for @simd loop.
+[1m[34mINFO: GLVisualize tests passed
+[0m[1m[34mINFO: Removing Contour v0.2.0
+[0m[1m[34mINFO: Removing DocStringExtensions v0.3.1
+[0m[1m[34mINFO: Removing Highlights v0.2.1
+[0m[1m[34mINFO: Removing ImageMagick v0.2.2
+[0mINFO: Cloning cache of BufferedStreams from https://github.com/BioJulia/BufferedStreams.jl.git
+INFO: Cloning cache of Codecs from https://github.com/dcjones/Codecs.jl.git
+INFO: Cloning cache of Coverage from https://github.com/JuliaCI/Coverage.jl.git
+INFO: Cloning cache of Git from https://github.com/JuliaPackaging/Git.jl.git
+INFO: Cloning cache of HttpCommon from https://github.com/JuliaWeb/HttpCommon.jl.git
+INFO: Cloning cache of HttpParser from https://github.com/JuliaWeb/HttpParser.jl.git
+INFO: Cloning cache of Libz from https://github.com/BioJulia/Libz.jl.git
+INFO: Cloning cache of MbedTLS from https://github.com/JuliaWeb/MbedTLS.jl.git
+INFO: Cloning cache of Requests from https://github.com/JuliaWeb/Requests.jl.git
+INFO: Installing BufferedStreams v0.3.0
+INFO: Installing Codecs v0.3.0
+INFO: Installing Coverage v0.3.2
+INFO: Installing Git v0.1.0
+INFO: Installing HttpCommon v0.2.6
+INFO: Installing HttpParser v0.2.0
+INFO: Installing Libz v0.2.4
+INFO: Installing MbedTLS v0.4.3
+INFO: Installing Requests v0.4.1
+INFO: Building Homebrew
+INFO: Building Git
+INFO: Using git version 2.10.1 (Apple Git-78) found on path at `/usr/bin/git`
+INFO: Building HttpParser
+INFO: Attempting to Create directory /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/HttpParser/deps/downloads
+INFO: Attempting to Create directory /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/HttpParser/deps/downloads
+INFO: Directory /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/HttpParser/deps/downloads already created
+INFO: Downloading file https://github.com/nodejs/http-parser/archive/v2.7.1.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   123    0   123    0     0    649      0 --:--:-- --:--:-- --:--:--   654
+100 55365  100 55365    0     0   129k      0 --:--:-- --:--:-- --:--:--  129k
+INFO: Done downloading file https://github.com/nodejs/http-parser/archive/v2.7.1.zip
+INFO: Attempting to Create directory /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/HttpParser/deps
+INFO: Directory /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/HttpParser/deps already created
+INFO: Attempting to Create directory /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/HttpParser/deps/usr/lib
+INFO: Changing Directory to /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/HttpParser/deps/src/http-parser-2.7.1
+INFO: Changing Directory to /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/HttpParser/deps/src/http-parser-2.7.1
+INFO: Changing Directory to /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/HttpParser/deps/src
+INFO: Attempting to Create directory /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/HttpParser/deps/usr/lib
+INFO: Directory /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/HttpParser/deps/usr/lib already created
+INFO: Changing Directory to /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/HttpParser/deps/src
+INFO: Changing Directory to /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpQvug81/v0.5/HttpParser/deps/src
+INFO: Building MbedTLS
+INFO: Package database updated
+

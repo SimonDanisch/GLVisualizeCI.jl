@@ -1,0 +1,630 @@
+Initialized empty Git repository in /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpeBxz4p/v0.5/Homebrew/deps/usr/.git/
+HEAD is now at 394f9fa Merge pull request #2282 from reitermarkus/cask-versions-string
+==> Homebrew has enabled anonymous aggregate user behaviour analytics.
+Read the analytics documentation (and how to opt-out) here:
+  http://docs.brew.sh/Analytics.html
+
+==> Tapping homebrew/core
+Tapped 4024 formulae (4,207 files, 10.4MB)
+==> Unshallowing homebrew/core
+==> Homebrew has enabled anonymous aggregate user behaviour analytics.
+Read the analytics documentation (and how to opt-out) here:
+  http://docs.brew.sh/Analytics.html
+
+==> Tapping staticfloat/juliadeps
+Tapped 17 formulae (45 files, 458.6KB)
+==> Homebrew has enabled anonymous aggregate user behaviour analytics.
+Read the analytics documentation (and how to opt-out) here:
+  http://docs.brew.sh/Analytics.html
+
+==> Tapping staticfloat/juliatranslated
+Tapped 0 formulae (29 files, 22KB)
+Already up-to-date.
+==> Installing libpng from staticfloat/juliatranslated
+==> Downloading https://homebrew.bintray.com/bottles/libpng-1.6.28.el_capitan.bottle.tar.gz
+Already downloaded: /Users/julia/Library/Caches/Homebrew.jl/libpng-1.6.28.el_capitan.bottle.tar.gz
+==> Pouring libpng-1.6.28.el_capitan.bottle.tar.gz
+🍺  /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpeBxz4p/v0.5/Homebrew/deps/usr/Cellar/libpng/1.6.28: 26 files, 1.2M
+==> Installing freetype from staticfloat/juliatranslated
+==> Downloading https://homebrew.bintray.com/bottles/freetype-2.7.1.el_capitan.bottle.tar.gz
+Already downloaded: /Users/julia/Library/Caches/Homebrew.jl/freetype-2.7.1.el_capitan.bottle.tar.gz
+==> Pouring freetype-2.7.1.el_capitan.bottle.tar.gz
+🍺  /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpeBxz4p/v0.5/Homebrew/deps/usr/Cellar/freetype/2.7.1: 62 files, 2.5M
+==> Installing glfw from staticfloat/juliatranslated
+==> Downloading https://homebrew.bintray.com/bottles/glfw-3.2.1.el_capitan.bottle.tar.gz
+Already downloaded: /Users/julia/Library/Caches/Homebrew.jl/glfw-3.2.1.el_capitan.bottle.tar.gz
+==> Pouring glfw-3.2.1.el_capitan.bottle.tar.gz
+🍺  /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpeBxz4p/v0.5/Homebrew/deps/usr/Cellar/glfw/3.2.1: 14 files, 286.7K
+Already up-to-date.
+Already up-to-date.
+==> Downloading https://homebrew.bintray.com/bottles/xz-5.2.3.el_capitan.bottle.tar.gz
+Already downloaded: /Users/julia/Library/Caches/Homebrew.jl/xz-5.2.3.el_capitan.bottle.tar.gz
+==> Pouring xz-5.2.3.el_capitan.bottle.tar.gz
+🍺  /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpeBxz4p/v0.5/Homebrew/deps/usr/Cellar/xz/5.2.3: 92 files, 1.4M
+==> Installing jpeg from staticfloat/juliatranslated
+==> Downloading https://homebrew.bintray.com/bottles/jpeg-8d.el_capitan.bottle.2.tar.gz
+Already downloaded: /Users/julia/Library/Caches/Homebrew.jl/jpeg-8d.el_capitan.bottle.2.tar.gz
+==> Pouring jpeg-8d.el_capitan.bottle.2.tar.gz
+🍺  /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpeBxz4p/v0.5/Homebrew/deps/usr/Cellar/jpeg/8d: 19 files, 714K
+==> Installing libtiff from staticfloat/juliatranslated
+==> Downloading https://homebrew.bintray.com/bottles/libtiff-4.0.7_2.el_capitan.bottle.tar.gz
+Already downloaded: /Users/julia/Library/Caches/Homebrew.jl/libtiff-4.0.7_2.el_capitan.bottle.tar.gz
+==> Pouring libtiff-4.0.7_2.el_capitan.bottle.tar.gz
+🍺  /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpeBxz4p/v0.5/Homebrew/deps/usr/Cellar/libtiff/4.0.7_2: 248 files, 3.4M
+==> Installing libtool from staticfloat/juliatranslated
+==> Downloading https://homebrew.bintray.com/bottles/libtool-2.4.6_1.el_capitan.bottle.tar.gz
+Already downloaded: /Users/julia/Library/Caches/Homebrew.jl/libtool-2.4.6_1.el_capitan.bottle.tar.gz
+==> Pouring libtool-2.4.6_1.el_capitan.bottle.tar.gz
+==> Caveats
+In order to prevent conflicts with Apple's own libtool we have prepended a "g"
+so, you have instead: glibtool and glibtoolize.
+==> Summary
+🍺  /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpeBxz4p/v0.5/Homebrew/deps/usr/Cellar/libtool/2.4.6_1: 70 files, 3.7M
+==> Installing imagemagick@6 from staticfloat/juliatranslated
+==> Downloading https://homebrew.bintray.com/bottles/imagemagick@6-6.9.7-10.el_capitan.bottle.tar.gz
+Already downloaded: /Users/julia/Library/Caches/Homebrew.jl/imagemagick@6-6.9.7-10.el_capitan.bottle.tar.gz
+==> Pouring imagemagick@6-6.9.7-10.el_capitan.bottle.tar.gz
+==> Caveats
+This formula is keg-only, which means it was not symlinked into /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpeBxz4p/v0.5/Homebrew/deps/usr.
+
+Older version of imagemagick
+
+If you need to have this software first in your PATH run:
+  echo 'export PATH="/private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpeBxz4p/v0.5/Homebrew/deps/usr/opt/imagemagick@6/bin:$PATH"' >> ~/.bash_profile
+
+For compilers to find this software you may need to set:
+    LDFLAGS:  -L/private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpeBxz4p/v0.5/Homebrew/deps/usr/opt/imagemagick@6/lib
+    CPPFLAGS: -I/private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpeBxz4p/v0.5/Homebrew/deps/usr/opt/imagemagick@6/include
+
+==> Summary
+🍺  /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpeBxz4p/v0.5/Homebrew/deps/usr/Cellar/imagemagick@6/6.9.7-10: 1,467 files, 22.7M
+Branch sd/warn set up to track remote branch sd/warn from origin.
+rotate_robj.jl
+Now showing rotate_robj.jl:
+
+screens.jl
+Now showing screens.jl:
+
+camera.jl
+Now showing camera.jl:
+
+color_chooser.jl
+Now showing color_chooser.jl:
+
+image_processing.jl
+Now showing image_processing.jl:
+
+buttons.jl
+Now showing buttons.jl:
+
+fractal_lines.jl
+Now showing fractal_lines.jl:
+
+mandalas.jl
+Now showing mandalas.jl:
+
+graph_editing.jl
+Now showing graph_editing.jl:
+
+mario_game.jl
+Now showing mario_game.jl:
+
+text_particle.jl
+Now showing text_particle.jl:
+
+documentation.jl
+contourf.jl
+Now showing contourf.jl:
+
+imageio.jl
+Now showing imageio.jl:
+
+parametric_fun.jl
+Now showing parametric_fun.jl:
+
+simulation.jl
+Now showing simulation.jl:
+
+contourlines.jl
+Now showing contourlines.jl:
+
+lines2D.jl
+Now showing lines2D.jl:
+
+lines3D.jl
+Now showing lines3D.jl:
+
+linesegments3d.jl
+Now showing linesegments3d.jl:
+
+multilines.jl
+Now showing multilines.jl:
+
+meshcreation.jl
+Now showing meshcreation.jl:
+
+vertexcolor.jl
+Now showing vertexcolor.jl:
+
+wireframe.jl
+Now showing wireframe.jl:
+
+bars.jl
+Now showing bars.jl:
+
+cubicles.jl
+Now showing cubicles.jl:
+
+flow3D.jl
+Now showing flow3D.jl:
+
+particles.jl
+Now showing particles.jl:
+
+sphere1Drange.jl
+Now showing sphere1Drange.jl:
+
+arrows.jl
+Now showing arrows.jl:
+
+arrows3d.jl
+Now showing arrows3d.jl:
+
+billboard.jl
+Now showing billboard.jl:
+
+bouncy.jl
+Now showing bouncy.jl:
+
+distancefield.jl
+Now showing distancefield.jl:
+
+image_texture_atlas.jl
+Now showing image_texture_atlas.jl:
+
+letitsnow.jl
+Now showing letitsnow.jl:
+
+mesmerizing.jl
+Now showing mesmerizing.jl:
+
+moving_bars.jl
+Now showing moving_bars.jl:
+
+moving_circles.jl
+Now showing moving_circles.jl:
+
+juliaset.jl
+Now showing juliaset.jl:
+
+mesh.jl
+Now showing mesh.jl:
+
+surface.jl
+Now showing surface.jl:
+
+text.jl
+Now showing text.jl:
+
+maximum_intensity_projection.jl
+Now showing maximum_intensity_projection.jl:
+
+volume.jl
+Now showing volume.jl:
+
+Updated 1 tap (homebrew/core).
+==> Updated Formulae
+ldc
+Archive:  /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpeBxz4p/v0.5/HttpParser/deps/downloads/v2.7.1.zip
+feae95a3a69f111bc1897b9048d9acbc290992f9
+   creating: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpeBxz4p/v0.5/HttpParser/deps/src/http-parser-2.7.1/
+  inflating: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpeBxz4p/v0.5/HttpParser/deps/src/http-parser-2.7.1/.gitignore  
+  inflating: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpeBxz4p/v0.5/HttpParser/deps/src/http-parser-2.7.1/.mailmap  
+  inflating: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpeBxz4p/v0.5/HttpParser/deps/src/http-parser-2.7.1/.travis.yml  
+  inflating: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpeBxz4p/v0.5/HttpParser/deps/src/http-parser-2.7.1/AUTHORS  
+  inflating: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpeBxz4p/v0.5/HttpParser/deps/src/http-parser-2.7.1/LICENSE-MIT  
+  inflating: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpeBxz4p/v0.5/HttpParser/deps/src/http-parser-2.7.1/Makefile  
+  inflating: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpeBxz4p/v0.5/HttpParser/deps/src/http-parser-2.7.1/README.md  
+  inflating: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpeBxz4p/v0.5/HttpParser/deps/src/http-parser-2.7.1/bench.c  
+   creating: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpeBxz4p/v0.5/HttpParser/deps/src/http-parser-2.7.1/contrib/
+  inflating: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpeBxz4p/v0.5/HttpParser/deps/src/http-parser-2.7.1/contrib/parsertrace.c  
+  inflating: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpeBxz4p/v0.5/HttpParser/deps/src/http-parser-2.7.1/contrib/url_parser.c  
+  inflating: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpeBxz4p/v0.5/HttpParser/deps/src/http-parser-2.7.1/http_parser.c  
+  inflating: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpeBxz4p/v0.5/HttpParser/deps/src/http-parser-2.7.1/http_parser.gyp  
+  inflating: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpeBxz4p/v0.5/HttpParser/deps/src/http-parser-2.7.1/http_parser.h  
+  inflating: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpeBxz4p/v0.5/HttpParser/deps/src/http-parser-2.7.1/test.c  
+cc  -I. -DHTTP_PARSER_STRICT=0  -Wall -Wextra -Werror -O3  -fPIC -c http_parser.c -o libhttp_parser.o
+cc  -shared -o libhttp_parser.dylib libhttp_parser.o
+Using system libraries...
+Coverage.MallocInfo[]
+Coverage.process_folder: Searching src for .jl files...
+Coverage.process_file: Detecting coverage for src/FreeTypeAbstraction.jl
+Coverage.process_folder: Skipping FreeTypeAbstraction.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/GLVisualize.jl
+Coverage.process_folder: Skipping GLVisualize.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/StructsOfArrays.jl
+Coverage.process_folder: Skipping StructsOfArrays.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/boundingbox.jl
+Coverage.process_folder: Skipping boundingbox.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/camera.jl
+Coverage.process_cov: Coverage file(s) for src/camera.jl do not exist.
+Assuming file has no coverage.
+Coverage.process_file: Detecting coverage for src/config.jl
+Coverage.process_folder: Skipping config.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/documentation.jl
+Coverage.process_folder: Skipping documentation.jl.65937.cov, not a .jl file
+Coverage.process_folder: Searching src/gui for .jl files...
+Coverage.process_file: Detecting coverage for src/gui/buttons.jl
+Coverage.process_folder: Skipping buttons.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/gui/color_chooser.jl
+Coverage.process_folder: Skipping color_chooser.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/gui/container.jl
+Coverage.process_folder: Skipping container.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/gui/line_edit.jl
+Coverage.process_folder: Skipping line_edit.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/gui/numbers.jl
+Coverage.process_folder: Skipping numbers.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/gui/options.jl
+Coverage.process_folder: Skipping options.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/parallel.jl
+Coverage.process_cov: Coverage file(s) for src/parallel.jl do not exist.
+Assuming file has no coverage.
+Coverage.process_file: Detecting coverage for src/renderloop.jl
+Coverage.process_folder: Skipping renderloop.jl.65937.cov, not a .jl file
+Coverage.process_folder: Searching src/text for .jl files...
+Coverage.process_file: Detecting coverage for src/text/richtext.jl
+Coverage.process_cov: Coverage file(s) for src/text/richtext.jl do not exist.
+Assuming file has no coverage.
+Coverage.process_file: Detecting coverage for src/texture_atlas.jl
+Coverage.process_folder: Skipping texture_atlas.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/types.jl
+Coverage.process_folder: Skipping types.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/utils.jl
+Coverage.process_folder: Skipping utils.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/videotool.jl
+Coverage.process_cov: Coverage file(s) for src/videotool.jl do not exist.
+Assuming file has no coverage.
+Coverage.process_folder: Searching src/visualize for .jl files...
+Coverage.process_file: Detecting coverage for src/visualize/containers.jl
+Coverage.process_folder: Skipping containers.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/visualize/image_like.jl
+Coverage.process_folder: Skipping image_like.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/visualize/lines.jl
+Coverage.process_folder: Skipping lines.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/visualize/mesh.jl
+Coverage.process_folder: Skipping mesh.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/visualize/particles.jl
+Coverage.process_folder: Skipping particles.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/visualize/surface.jl
+Coverage.process_folder: Skipping surface.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/visualize/text.jl
+Coverage.process_folder: Skipping text.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/visualize_interface.jl
+Coverage.process_folder: Skipping visualize_interface.jl.65937.cov, not a .jl file
+Result of submission:
+{"message":"Job #10.1","url":"https://coveralls.io/jobs/23597523"}
+Coverage.process_folder: Searching src for .jl files...
+Coverage.process_file: Detecting coverage for src/FreeTypeAbstraction.jl
+Coverage.process_folder: Skipping FreeTypeAbstraction.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/GLVisualize.jl
+Coverage.process_folder: Skipping GLVisualize.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/StructsOfArrays.jl
+Coverage.process_folder: Skipping StructsOfArrays.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/boundingbox.jl
+Coverage.process_folder: Skipping boundingbox.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/camera.jl
+Coverage.process_cov: Coverage file(s) for src/camera.jl do not exist.
+Assuming file has no coverage.
+Coverage.process_file: Detecting coverage for src/config.jl
+Coverage.process_folder: Skipping config.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/documentation.jl
+Coverage.process_folder: Skipping documentation.jl.65937.cov, not a .jl file
+Coverage.process_folder: Searching src/gui for .jl files...
+Coverage.process_file: Detecting coverage for src/gui/buttons.jl
+Coverage.process_folder: Skipping buttons.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/gui/color_chooser.jl
+Coverage.process_folder: Skipping color_chooser.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/gui/container.jl
+Coverage.process_folder: Skipping container.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/gui/line_edit.jl
+Coverage.process_folder: Skipping line_edit.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/gui/numbers.jl
+Coverage.process_folder: Skipping numbers.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/gui/options.jl
+Coverage.process_folder: Skipping options.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/parallel.jl
+Coverage.process_cov: Coverage file(s) for src/parallel.jl do not exist.
+Assuming file has no coverage.
+Coverage.process_file: Detecting coverage for src/renderloop.jl
+Coverage.process_folder: Skipping renderloop.jl.65937.cov, not a .jl file
+Coverage.process_folder: Searching src/text for .jl files...
+Coverage.process_file: Detecting coverage for src/text/richtext.jl
+Coverage.process_cov: Coverage file(s) for src/text/richtext.jl do not exist.
+Assuming file has no coverage.
+Coverage.process_file: Detecting coverage for src/texture_atlas.jl
+Coverage.process_folder: Skipping texture_atlas.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/types.jl
+Coverage.process_folder: Skipping types.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/utils.jl
+Coverage.process_folder: Skipping utils.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/videotool.jl
+Coverage.process_cov: Coverage file(s) for src/videotool.jl do not exist.
+Assuming file has no coverage.
+Coverage.process_folder: Searching src/visualize for .jl files...
+Coverage.process_file: Detecting coverage for src/visualize/containers.jl
+Coverage.process_folder: Skipping containers.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/visualize/image_like.jl
+Coverage.process_folder: Skipping image_like.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/visualize/lines.jl
+Coverage.process_folder: Skipping lines.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/visualize/mesh.jl
+Coverage.process_folder: Skipping mesh.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/visualize/particles.jl
+Coverage.process_folder: Skipping particles.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/visualize/surface.jl
+Coverage.process_folder: Skipping surface.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/visualize/text.jl
+Coverage.process_folder: Skipping text.jl.65937.cov, not a .jl file
+Coverage.process_file: Detecting coverage for src/visualize_interface.jl
+Coverage.process_folder: Skipping visualize_interface.jl.65937.cov, not a .jl file
+the environment variable REPO_TOKEN is deprecated, use CODECOV_TOKEN instead
+Codecov.io API URL:
+https://codecov.io/upload/v2?&commit=0c084415f381b24d1a672e0df69e29fef4b4e639&branch=HEAD&token=oK7GLje014vcMAE0cRp5WN6C3Gg4nvSW2
+Result of submission:
+
+<html lang="en">
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="Code coverage done right. Highly integrated with GitHub, Bitbucket and GitLab.">
+<meta name="author" content="@codecov">
+<meta name="keywords" content="code, coverage, analysis, testing, development, qa, analyzer">
+
+<link rel="shortcut icon" href="https://d234q63orb21db.cloudfront.net/e83920e0bfbf929397130f7e8d55511b29965b2b/media/images/favicon.png">
+
+<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/keefkhehidemnokodkdkejapdgfjmijf">
+<meta property="og:url" content="https://codecov.io">
+<meta property="og:site_name" content="Codecov">
+<meta property="og:title" content="Code coverage done right.">
+<meta property="og:description" content="Hosted coverage report highly integrated with GitHub, Bitbucket and GitLab. Browser extensions and awesome pull request comments to enhance your QA.">
+<meta property="og:image" content="https://d234q63orb21db.cloudfront.net/9fe342f72c9a347589de9022ee335ed24d278355/media/images/codecov-logo.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1200">
+<meta property="twitter:site" content="codecov">
+<meta property="twitter:site:id" content="122181800">
+<meta property="twitter:creator" content="codecov">
+<meta property="twitter:creator:id" content="122181800">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Codecov">
+<meta property="twitter:description" content="Code coverage done right. Hosted coverage report highly integrated with GitHub, Bitbucket and GitLab. Browser extensions and awesome pull request comments to enhance your QA.">
+<meta property="twitter:image:src" content="https://d234q63orb21db.cloudfront.net/9fe342f72c9a347589de9022ee335ed24d278355/media/images/codecov-logo.png">
+<meta property="twitter:image:width" content="1200">
+<meta property="twitter:image:height" content="1200">
+
+<title>Codecov</title>
+<link rel="stylesheet" href="https://d234q63orb21db.cloudfront.net/cd118a714294f80d079e8514f43792f519841d20/bower/deps.min.css">
+<link rel="stylesheet" href="https://d234q63orb21db.cloudfront.net/e83920e0bfbf929397130f7e8d55511b29965b2b/media/css/style.css">
+
+
+</head>
+<body>
+<div id="body">
+<main>
+<div class="ui menu hidden-print">
+<div class="ui container">
+<a href="/" class="brand ">
+<svg alt="Codecov" aria-hidden="true" role="img" classes="" width="35px" height="35px" viewBox="0 0 256 281" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+    <g>
+        <path d="M218.551006,37.4189601 C194.415777,13.2894436 162.329733,0 128.097097,0 C57.5366498,0.0471307512 0.0914050933,57.5266524 0.0399897283,128.121377 L0,149.812948 L16.8585269,138.323042 C28.3270097,130.509335 41.6093123,126.378967 55.2758019,126.378967 C59.3547542,126.378967 63.4736963,126.751728 67.5155152,127.488682 C80.2579565,129.809514 91.6807368,135.578033 100.92979,144.247235 C103.049245,139.577006 105.544319,135.038171 108.489276,130.710712 C109.697538,128.935453 110.974352,127.227321 112.295442,125.560606 C100.642721,115.720276 86.6463156,109.097692 71.3688112,106.315549 C66.0430363,105.347226 60.6201435,104.857352 55.2486661,104.857352 C44.1229524,104.857352 33.2843078,106.898257 22.9583887,110.927222 C31.3190983,59.7046644 75.8090992,21.55732 128.18993,21.5187584 C156.581209,21.5187584 183.267212,32.5716337 203.337771,52.6364799 C219.349373,68.6466532 229.592456,88.6686533 233.125834,110.752981 C222.797058,106.718303 211.91414,104.653119 200.722728,104.608845 L199.15456,104.601704 C198.007711,104.624555 196.869432,104.648834 195.754005,104.713104 C193.798793,104.813078 191.856434,104.990175 189.932643,105.212975 C189.358505,105.275816 188.794364,105.365793 188.225938,105.444344 C186.847721,105.630011 185.475216,105.838529 184.116994,106.082752 C183.514291,106.192724 182.914445,106.314121 182.317456,106.43409 C180.933526,106.715446 179.561021,107.028223 178.202799,107.370992 C177.711496,107.496674 177.220194,107.613787 176.733176,107.745182 C175.017902,108.209348 173.318339,108.722074 171.643055,109.283358 C171.543081,109.317635 171.438822,109.346199 171.338847,109.379048 C167.53411,110.677286 163.846486,112.235457 160.281687,114.027854 C160.18457,114.077841 160.08888,114.129256 159.988906,114.179244 C158.320763,115.024741 156.686897,115.928794 155.07731,116.879978 C154.945915,116.95853 154.811664,117.038509 154.678841,117.118489 C146.259575,122.165764 138.725796,128.638387 132.377426,136.370686 C132.114637,136.689176 131.853275,137.006237 131.593342,137.329012 C130.216553,139.054283 128.875469,140.818115 127.61722,142.664784 C126.547495,144.235809 125.554893,145.839683 124.592283,147.460695 C124.373768,147.8306 124.158109,148.20479 123.945306,148.577551 C123.068389,150.104302 122.230033,151.651047 121.448805,153.216359 C121.404531,153.306336 121.360256,153.3906 121.315982,153.480577 C119.502162,157.143922 117.962557,160.910097 116.678602,164.753396 C116.678602,164.756252 116.677173,164.757681 116.677173,164.761965 L116.677173,164.76625 C113.532267,174.1924 112.006944,184.077004 112.168331,194.078721 C112.172616,194.475762 112.172616,194.872802 112.186898,195.271272 C112.208321,196.048215 112.246883,196.828015 112.291157,197.609242 C112.325434,198.230511 112.365424,198.847496 112.411126,199.46448 C112.459685,200.122882 112.512529,200.782713 112.579654,201.442544 C112.658206,202.246623 112.753895,203.049274 112.855298,203.853353 C112.918139,204.36465 112.973839,204.878804 113.049534,205.387245 C113.240913,206.725472 113.455144,208.060844 113.707936,209.396215 C118.046822,232.334609 130.969217,252.333757 150.097161,265.713178 L152.543675,267.277062 L152.56367,267.228503 C163.430879,274.293831 175.89482,278.928355 188.795792,280.679334 L190.542486,280.914987 L203.516297,260.093193 L198.85178,259.966083 C162.953858,258.980622 133.751359,228.962618 133.751359,193.048985 C133.751359,157.700922 161.375692,128.347033 196.628066,126.220436 L198.858921,126.134744 C213.149536,125.773408 227.230205,129.993753 239.18285,138.131663 L255.964253,149.553015 L255.999959,127.972843 C256.027094,93.7544898 242.727653,61.594179 218.551006,37.4189601" fill="white"></path>
+    </g>
+</svg>
+
+</a>
+
+<div class="menu right">
+
+<a class="item" href="http://docs.codecov.io">Docs</a>
+<a class="item" href="/support">Support</a>
+
+<a class="item" href="/login">
+Sign up
+</a>
+
+
+<a href="http://status.codecov.io/" target="_blank"
+data-content="Loading Codecov status..."
+data-position="bottom right"
+id="status"
+class="item tooltipped">
+<div class="ui mini loader"></div>
+</a>
+
+
+</div>
+</div>
+</div>
+
+
+<div class="alerts hidden-print">
+
+<div class="hide" id="alert-status" aria-hidden="true">
+<div class="ui container">
+<svg fill="black" class="" aria-hidden="true" role="img" width="14px" height="14px" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1024 1375v-190q0-14-9.5-23.5t-22.5-9.5h-192q-13 0-22.5 9.5t-9.5 23.5v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19-13-11-24-11h-220q-11 0-24 11-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126-17 29-46.5 46t-63.5 17h-1536q-34 0-63.5-17t-46.5-46q-37-63-2-126l768-1408q17-31 47-49t65-18 65 18 47 49z"/></svg> <span></span> <a href="http://status.codecov.io">Learn more</a>
+</div>
+</div>
+
+
+
+
+</div>
+
+<div id="pjax-outer">
+
+
+
+<div id="pjax-inner">
+
+
+<div class="spacing text-center">
+<div class="error">
+<div class="status">400</div>
+<div class="reason">Provided token is not a UUID.</div>
+</div>
+
+
+
+</div>
+
+</div>
+
+
+
+</div>
+
+</main>
+<footer class="hidden-print">
+<div class="ui container">
+<div class="ui two column stackable flex grid">
+<div class="column">
+&copy; 2017 <strong>Codecov </strong>
+
+<a href="/site/terms">Terms</a>
+<a href="/site/privacy">Privacy</a>
+<a href="/site/security">Security</a>
+<a href="https://docs.codecov.io/blog">Changelog</a>
+
+</div>
+<div class="column right aligned">
+
+<!-- <a href="http://shop.codecov.io/blog">Blog</a> -->
+
+<a href="/pricing">Pricing</a>
+
+<a href="/support">Support</a>
+<a href="http://docs.codecov.io">Docs</a>
+
+<!-- <a href="http://shop.codecov.io">Shop</a> -->
+<a href="/enterprise" data-event="sales,click,enterprise,footer">Enterprise</a>
+
+</div>
+</div>
+</div>
+</footer>
+
+</div>
+<div id="pjax-loading">
+<div class="ui active large inverted dimmer">
+<div class="ui text loader">Loading</div>
+</div>
+</div>
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://d234q63orb21db.cloudfront.net/cd118a714294f80d079e8514f43792f519841d20/bower/deps.min.js"></script>
+<script type="text/javascript" src="https://d234q63orb21db.cloudfront.net/e83920e0bfbf929397130f7e8d55511b29965b2b/media/js/script.min.js"></script>
+
+
+<script>
+
+
+
+</script>
+
+
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', "UA-63027104-1", 'auto');
+ga('send', 'pageview');
+</script>
+
+
+
+
+<div class="ui modal" id="modal-keyboard" aria-hidden="true" role="modal">
+<div class="header">
+Keyboard Shortcuts
+</div>
+<div class="content">
+<table class="ui celled table">
+<thead>
+<tr>
+<th>Navigation</th>
+<th>Overlay</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><kbd>t</kbd> Navigate files</td>
+<td><kbd>h</kbd> Toggle hits</td>
+</tr>
+<tr>
+<td><kbd>y</kbd> Change url to tip of branch</td>
+<td><kbd>m</kbd> Toggle misses</td>
+</tr>
+<tr>
+<td><kbd>b / v</kbd> Jump to prev/next hit line</td>
+<td><kbd>p</kbd> Toggle partial</td>
+</tr>
+<tr>
+<td><kbd>z / x</kbd> Jump to prev/next missed or partial line</td>
+<td><kbd>1..9</kbd> Toggle flags</td>
+</tr>
+<tr>
+<td><kbd>shift + o</kbd> Open current page in svn</td>
+<td><kbd>a</kbd> Toggle all on</td>
+</tr>
+<tr>
+<td><kbd>/ or ?</kbd> Show keyboard shortcuts dialog</td>
+<td><kbd>c</kbd> Toggle context lines or commits</td>
+</tr>
+</tbody>
+</table>
+<div class="ui info message">
+<svg fill="black" class="" aria-hidden="true" role="img" width="14px" height="14px" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1408 1600q0-26-19-45t-45-19-45 19-19 45 19 45 45 19 45-19 19-45zm128-764q0-189-167-189-26 0-56 5-16-30-52.5-47.5t-73.5-17.5-69 18q-50-53-119-53-25 0-55.5 10t-47.5 25v-331q0-52-38-90t-90-38q-51 0-89.5 39t-38.5 89v576q-20 0-48.5-15t-55-33-68-33-84.5-15q-67 0-97.5 44.5t-30.5 115.5q0 24 139 90 44 24 65 37 64 40 145 112 81 71 106 101 57 69 57 140v32h640v-32q0-72 32-167t64-193.5 32-179.5zm128-5q0 133-69 322-59 164-59 223v288q0 53-37.5 90.5t-90.5 37.5h-640q-53 0-90.5-37.5t-37.5-90.5v-288q0-10-4.5-21.5t-14-23.5-18-22.5-22.5-24-21.5-20.5-21.5-19-17-14q-74-65-129-100-21-13-62-33t-72-37-63-40.5-49.5-55-17.5-69.5q0-125 67-206.5t189-81.5q68 0 128 22v-374q0-104 76-180t179-76q105 0 181 75.5t76 180.5v169q62 4 119 37 21-3 43-3 101 0 178 60 139-1 219.5 85t80.5 227z"/></svg>
+<kbd>alt + click</kbd> any link to open page GitHub.
+</div>
+</div>
+<div class="actions">
+<a class="ui positive button">
+Got it!
+</a>
+</div>
+</div>
+
+<div class="ui modal" id="modal-gotoline" aria-hidden="true" role="modal">
+<div class="content">
+<div class="ui massive icon input focus fluid">
+<input type="text" placeholder="Go to line number" id="gotoline">
+</div>
+</div>
+</div>
+
+<div class="ui modal" id="modal-sorry" aria-hidden="true" role="modal">
+<div class="header"></div>
+<div class="image content">
+<div class="image">
+<svg fill="#fff" class="" aria-hidden="true" role="img" width="100px" height="100px" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1262 1229q8 25-4 48.5t-37 31.5-49-4-32-38q-25-80-92.5-129.5t-151.5-49.5-151.5 49.5-92.5 129.5q-8 26-31.5 38t-48.5 4q-26-8-38-31.5t-4-48.5q37-121 138-195t228-74 228 74 138 195zm-494-589q0 53-37.5 90.5t-90.5 37.5-90.5-37.5-37.5-90.5 37.5-90.5 90.5-37.5 90.5 37.5 37.5 90.5zm512 0q0 53-37.5 90.5t-90.5 37.5-90.5-37.5-37.5-90.5 37.5-90.5 90.5-37.5 90.5 37.5 37.5 90.5zm256 256q0-130-51-248.5t-136.5-204-204-136.5-248.5-51-248.5 51-204 136.5-136.5 204-51 248.5 51 248.5 136.5 204 204 136.5 248.5 51 248.5-51 204-136.5 136.5-204 51-248.5zm128 0q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"/></svg>
+</div>
+<div class="description"><p></p></div>
+</div>
+<div class="actions">
+<div class="ui purple close button">
+Close
+</div>
+</div>
+</div>
+
+</body>
+</html>
+
+
+
