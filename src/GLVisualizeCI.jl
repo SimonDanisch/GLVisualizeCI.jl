@@ -83,33 +83,33 @@ function handle_event(name, event, auth)
         ))
 
         try
-            ORIGINAL_STDOUT = STDOUT
-            out_rd, out_wr = redirect_stdout()
-
-
-            ORIGINAL_STDERR = STDERR
-            err_rd, err_wr = redirect_stderr()
-            err_reader = @async readstring(err_rd)
+            # ORIGINAL_STDOUT = STDOUT
+            # out_rd, out_wr = redirect_stdout()
+            #
+            #
+            # ORIGINAL_STDERR = STDERR
+            # err_rd, err_wr = redirect_stderr()
+            # err_reader = @async readstring(err_rd)
 
             ENV["CI_REPORT_DIR"] = path
             ENV["CI"] = "true"
             test_pr(repo, pr)
-            log_stdio = readstring(out_rd)
-            log_errsdio = readstring(err_rd)
-            close(out_rd); close(err_rd)
-            open(joinpath(path, "stdiolog.txt"), "w") do io
-                println(io, log_stdio)
-            end
-            open(joinpath(path, "errorlog.txt"), "w") do io
-                println(io, log_errsdio)
-            end
-
-            @async wait(out_reader)
-            REDIRECTED_STDOUT = STDOUT
-            out_stream = redirect_stdout(ORIGINAL_STDOUT)
-            @async wait(err_reader)
-            REDIRECTED_STDERR = STDERR
-            err_stream = redirect_stderr(ORIGINAL_STDERR)
+            # log_stdio = readstring(out_rd)
+            # log_errsdio = readstring(err_rd)
+            # close(out_rd); close(err_rd)
+            # open(joinpath(path, "stdiolog.txt"), "w") do io
+            #     println(io, log_stdio)
+            # end
+            # open(joinpath(path, "errorlog.txt"), "w") do io
+            #     println(io, log_errsdio)
+            # end
+            #
+            # @async wait(out_reader)
+            # REDIRECTED_STDOUT = STDOUT
+            # out_stream = redirect_stdout(ORIGINAL_STDOUT)
+            # @async wait(err_reader)
+            # REDIRECTED_STDERR = STDERR
+            # err_stream = redirect_stderr(ORIGINAL_STDERR)
         catch err
             GitHub.create_status(repo, sha; auth = myauth, params = Dict(
                 "state" => "error",
