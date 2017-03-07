@@ -8,7 +8,8 @@ function push_status(pr)
     cd(GLVisualizeCI.dir()) do
         try
             run(`git add -A`)
-            run(`git commit -m "data for $pr"`)
+            run(`git commit -m "data for $(pr)"`)
+            run(`git pull origin master`)
             run(`git push origin HEAD`)
         catch e
             warn("couldn't update report: $e")
