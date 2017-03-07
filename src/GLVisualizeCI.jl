@@ -92,9 +92,9 @@ function handle_event(name, event, auth)
 
         path = dir("reports", name)
         isdir(path) || mkdir(path)
-        path = dir("reports", name, repo)
+        path = dir("reports", name, package)
         isdir(path) || mkdir(path)
-        path = dir("reports", name, repo, pr)
+        path = dir("reports", name, package, pr)
         isdir(path) || mkdir(path)
 
         push_status(pr)
