@@ -9,7 +9,7 @@ function push_status(pr)
         try
             run(`git pull origin master`)
             run(`git add .`)
-            run(`git commit -m "update"`)
+            run(`git commit -m $("update")`)
             run(`git push origin master`)
         catch e
             warn("couldn't update report: $e")
