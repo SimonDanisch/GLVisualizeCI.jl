@@ -33,8 +33,15 @@ end
 gitclone!(repo, path) = run(`git clone https://github.com/$(repo).git $(path)`)
 
 
+
+
 function test_pr(package, repo, pr)
     mktempdir() do path
+        ORIGINAL_STDOUT = STDOUT
+        out_rd, out_wr = redirect_stdout()
+        ORIGINAL_STDERR = STDERR
+        err_rd, err_wr = redirect_stderr()
+
         cd(homedir()) # make sure, we're in a concrete folder
         # init a new julia package repository
         ENV["JULIA_PKGDIR"] = path
@@ -57,6 +64,24 @@ function test_pr(package, repo, pr)
         Pkg.test(package, coverage = true)
         julia_exe = Base.julia_cmd()
         run(`$julia_exe $(dir("src", "submit_coverage.jl"))`)
+
+        # save io output!
+        log_stdio = String(readavailable(out_rd))
+        log_errsdio = String(readavailable(err_rd))
+        close(out_rd); close(err_rd)
+
+        REDIRECTED_STDOUT = STDOUT
+        out_stream = redirect_stdout(ORIGINAL_STDOUT)
+        REDIRECTED_STDERR = STDERR
+        err_stream = redirect_stderr(ORIGINAL_STDERR)
+
+        path = ENV["CI_REPORT_DIR"]
+        open(joinpath(path, "stdiolog.txt"), "w") do io
+            println(io, log_stdio)
+        end
+        open(joinpath(path, "errorlog.txt"), "w") do io
+            println(io, log_errsdio)
+        end
     end
 end
 
@@ -79,52 +104,29 @@ function handle_event(name, event, auth)
             "state" => "pending",
             "context" => name,
             "description" => "Running CI...",
-            #"target_url" => target_url
+            "target_url" => target_url
         ))
-
-        #try
-            # ORIGINAL_STDOUT = STDOUT
-            # out_rd, out_wr = redirect_stdout()
-            #
-            #
-            # ORIGINAL_STDERR = STDERR
-            # err_rd, err_wr = redirect_stderr()
-            # err_reader = @async readstring(err_rd)
+        try
 
             ENV["CI_REPORT_DIR"] = path
             ENV["CI"] = "true"
             test_pr(package, get(repo.full_name), pr)
-            # log_stdio = readstring(out_rd)
-            # log_errsdio = readstring(err_rd)
-            # close(out_rd); close(err_rd)
-            # open(joinpath(path, "stdiolog.txt"), "w") do io
-            #     println(io, log_stdio)
-            # end
-            # open(joinpath(path, "errorlog.txt"), "w") do io
-            #     println(io, log_errsdio)
-            # end
-            #
-            # @async wait(out_reader)
-            # REDIRECTED_STDOUT = STDOUT
-            # out_stream = redirect_stdout(ORIGINAL_STDOUT)
-            # @async wait(err_reader)
-            # REDIRECTED_STDERR = STDERR
-            # err_stream = redirect_stderr(ORIGINAL_STDERR)
-        # catch err
-        #     GitHub.create_status(repo, sha; auth = auth, params = Dict(
-        #         "state" => "error",
-        #         "context" => name,
-        #         "description" => "Error!",
-        #         "target_url" => target_url
-        #     ))
-        #     return HttpCommon.Response(500)
-        # end
+
+        catch err
+            GitHub.create_status(repo, sha; auth = auth, params = Dict(
+                "state" => "error",
+                "context" => name,
+                "description" => "Error!",
+                "target_url" => target_url
+            ))
+            return HttpCommon.Response(500)
+        end
 
         GitHub.create_status(repo, sha; auth = auth, params = Dict(
             "state" => "success",
-            "context" => "CIer",
+            "context" => name,
             "description" => "CI complete!",
-            #"target_url" => target_url
+            "target_url" => target_url
         ))
         return HttpCommon.Response(202, "success")
     else
