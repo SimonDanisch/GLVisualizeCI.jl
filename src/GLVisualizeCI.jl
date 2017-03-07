@@ -82,7 +82,7 @@ function handle_event(name, event, auth)
             "target_url" => target_url
         ))
 
-        try
+        #try
             # ORIGINAL_STDOUT = STDOUT
             # out_rd, out_wr = redirect_stdout()
             #
@@ -110,15 +110,15 @@ function handle_event(name, event, auth)
             # @async wait(err_reader)
             # REDIRECTED_STDERR = STDERR
             # err_stream = redirect_stderr(ORIGINAL_STDERR)
-        catch err
-            GitHub.create_status(repo, sha; auth = auth, params = Dict(
-                "state" => "error",
-                "context" => name,
-                "description" => "Error: $err",
-                "target_url" => target_url
-            ))
-            return HttpCommon.Response(500)
-        end
+        # catch err
+        #     GitHub.create_status(repo, sha; auth = auth, params = Dict(
+        #         "state" => "error",
+        #         "context" => name,
+        #         "description" => "Error!",
+        #         "target_url" => target_url
+        #     ))
+        #     return HttpCommon.Response(500)
+        # end
 
         GitHub.create_status(repo, sha; auth = auth, params = Dict(
             "state" => "success",
