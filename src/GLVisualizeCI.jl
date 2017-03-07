@@ -19,10 +19,7 @@ function image_url(path)
 end
 
 function report_url(repo, pr)
-    string(
-        "https://github.com/SimiDCI/GLVisualizeCI.jl/blob/master/reports/",
-        repo, pr
-    )
+    "https://github.com/SimiDCI/GLVisualizeCI.jl/blob/master/reports/$repo/$pr"
 end
 function report_folder(repo, pr)
     dir("reports", repo, pr)
@@ -61,6 +58,7 @@ end
 
 function handle_event(name, event, auth)
     kind, payload, repo = event.kind, event.payload, event.repository
+    @show repo
     if kind == "pull_request"
         sha = event.payload["pull_request"]["head"]["sha"]
         pr = string(event.payload["pull_request"]["number"])
