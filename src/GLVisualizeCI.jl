@@ -68,7 +68,8 @@ function handle_event(name, event, auth)
         sha = event.payload["pull_request"]["head"]["sha"]
         pr = string(event.payload["pull_request"]["number"])
         package, jl = splitext(get(repo.name))
-        target_url = report_url(repo, pr)
+        target_url = report_url(get(repo.full_name), pr)
+        @show target_url
         path = report_folder(package, pr)
         path1, _ = splitdir(path)
         isdir(path1) || mkdir(path1)
