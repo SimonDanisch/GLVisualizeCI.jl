@@ -68,7 +68,7 @@ function handle_event(name, event, auth)
         sha = event.payload["pull_request"]["head"]["sha"]
         pr = string(event.payload["pull_request"]["number"])
         package, jl = splitext(get(repo.name))
-        target_url = report_url(get(repo.full_name), pr)
+        target_url = report_url(package, pr)
         @show target_url
         path = report_folder(package, pr)
         path1, _ = splitdir(path)
@@ -93,7 +93,7 @@ function handle_event(name, event, auth)
 
             ENV["CI_REPORT_DIR"] = path
             ENV["CI"] = "true"
-            test_pr(package, repo, pr)
+            test_pr(package, get(repo.full_name), pr)
             # log_stdio = readstring(out_rd)
             # log_errsdio = readstring(err_rd)
             # close(out_rd); close(err_rd)
