@@ -29,10 +29,10 @@ gitclone!(repo, path) = run(`git clone https://github.com/$(repo).git $(path)`)
 
 function test_pr(package, repo, pr)
     mktempdir() do path
-        ORIGINAL_STDOUT = STDOUT
-        out_rd, out_wr = redirect_stdout()
-        ORIGINAL_STDERR = STDERR
-        err_rd, err_wr = redirect_stderr()
+        # ORIGINAL_STDOUT = STDOUT
+        # out_rd, out_wr = redirect_stdout()
+        # ORIGINAL_STDERR = STDERR
+        # err_rd, err_wr = redirect_stderr()
 
         cd(homedir()) # make sure, we're in a concrete folder
         # init a new julia package repository
@@ -58,22 +58,22 @@ function test_pr(package, repo, pr)
         run(`$julia_exe $(dir("src", "submit_coverage.jl"))`)
 
         # save io output!
-        log_stdio = String(readavailable(out_rd))
-        log_errsdio = String(readavailable(err_rd))
-        close(out_rd); close(err_rd)
-
-        REDIRECTED_STDOUT = STDOUT
-        out_stream = redirect_stdout(ORIGINAL_STDOUT)
-        REDIRECTED_STDERR = STDERR
-        err_stream = redirect_stderr(ORIGINAL_STDERR)
-
-        path = ENV["CI_REPORT_DIR"]
-        open(joinpath(path, "stdiolog.txt"), "w") do io
-            println(io, log_stdio)
-        end
-        open(joinpath(path, "errorlog.txt"), "w") do io
-            println(io, log_errsdio)
-        end
+        # log_stdio = String(readavailable(out_rd))
+        # log_errsdio = String(readavailable(err_rd))
+        # close(out_rd); close(err_rd)
+        #
+        # REDIRECTED_STDOUT = STDOUT
+        # out_stream = redirect_stdout(ORIGINAL_STDOUT)
+        # REDIRECTED_STDERR = STDERR
+        # err_stream = redirect_stderr(ORIGINAL_STDERR)
+        #
+        # path = ENV["CI_REPORT_DIR"]
+        # open(joinpath(path, "stdiolog.txt"), "w") do io
+        #     println(io, log_stdio)
+        # end
+        # open(joinpath(path, "errorlog.txt"), "w") do io
+        #     println(io, log_errsdio)
+        # end
     end
 end
 
