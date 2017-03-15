@@ -7,7 +7,7 @@ dir(paths...) = normpath(joinpath(dirname(@__FILE__), "..", paths...))
 function push_status(pr)
     try
         repo = LibGit2.GitRepo(GLVisualizeCI.dir())
-        LibGit2.fetch!(repo)
+        LibGit2.fetch(repo)
         LibGit2.add!(repo, ".")
         LibGit2.commit(repo, "update $pr")
         LibGit2.push(repo, refspecs = ["refs/heads/master"])
