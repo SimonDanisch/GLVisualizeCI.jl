@@ -1,6 +1,5 @@
 ### Test Images:
-<img src="https://github.com/SimiDCI/GLVisualizeCI.jl/blob/master/reports/macmini/GLVisualize/155/images/annotations.jpg?raw=true"
-    alt="annotations.jpg" width=150px"/>
+<img src="https://github.com/SimiDCI/GLVisualizeCI.jl/blob/master/reports/macmini/GLVisualize/155/images/annotations.jpg?raw=true" alt="annotations.jpg" width=150px"/>
 
 <img src="https://github.com/SimiDCI/GLVisualizeCI.jl/blob/master/reports/macmini/GLVisualize/155/images/arrows.jpg?raw=true"
     alt="arrows.jpg" width=150px"/>
