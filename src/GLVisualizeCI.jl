@@ -53,9 +53,13 @@ function test_pr(package, repo, pr)
         run(`git checkout --quiet --force FETCH_HEAD`)
         Pkg.add("GLVisualize") # this checks out the dependencies after a fetch
         Pkg.build("GLVisualize")
-        Pkg.test(package, coverage = true)
         julia_exe = Base.julia_cmd()
-        run(`$julia_exe $(dir("src", "submit_coverage.jl"))`)
+        logstd = ENV["CI_REPORT_DIR"] * "/log_sttd.txt"
+        logsterr = ENV["CI_REPORT_DIR"] * "/log_sterr.txt"
+        testcmd = `$julia_exe -e $("Pkg.test(\"$package\", coverage = true)")`
+        coveragecmd = `$julia_exe $(dir("src", "submit_coverage.jl"))`
+        run(pipeline(testcmd, stdout = `tee $logstd`, stderr = `tee $logsterr`))
+        run(pipeline(coveragecmd, stdout = `tee $logstd`, stderr = `tee $logsterr`))
 
         # save io output!
         # log_stdio = String(readavailable(out_rd))
