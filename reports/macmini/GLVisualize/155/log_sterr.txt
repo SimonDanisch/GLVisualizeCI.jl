@@ -1,0 +1,924 @@
+INFO: Computing test dependencies for GLVisualize...
+INFO: Cloning cache of Contour from https://github.com/tlycken/Contour.jl.git
+INFO: Cloning cache of DocStringExtensions from https://github.com/JuliaDocs/DocStringExtensions.jl.git
+INFO: Cloning cache of Highlights from https://github.com/JuliaDocs/Highlights.jl.git
+INFO: Cloning cache of ImageMagick from https://github.com/JuliaIO/ImageMagick.jl.git
+INFO: Installing Contour v0.2.0
+INFO: Installing DocStringExtensions v0.3.1
+INFO: Installing Highlights v0.2.1
+INFO: Installing ImageMagick v0.2.2
+INFO: Building Homebrew
+INFO: Building ImageMagick
+Warning: Already linked: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/Homebrew/deps/usr/Cellar/xz/5.2.3
+Warning: Already linked: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/Homebrew/deps/usr/Cellar/jpeg/8d
+Warning: Already linked: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/Homebrew/deps/usr/Cellar/libtiff/4.0.7_2
+Warning: Already linked: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/Homebrew/deps/usr/Cellar/libtool/2.4.6_1
+INFO: Testing GLVisualize
+WARNING: GLFW reports the following error: Cocoa: Failed to retrieve display name.
+This can be ignored on a headless system.
+WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GeometryTypes/src/typealias.jl:90
+WARNING: GLFW reports the following error: Cocoa: Failed to retrieve display name.
+This can be ignored on a headless system.
+WARNING: GLFW reports the following error: Cocoa: Failed to retrieve display name.
+This can be ignored on a headless system.
+WARNING: GLFW reports the following error: Cocoa: Failed to retrieve display name.
+This can be ignored on a headless system.
+Previous HEAD position was be433da... remove failing
+Switched to branch 'master'
+WARNING: Plots.jl is not installed, excluding a lot of interesting examples from the tests
+    and a nice summary.
+Please consider doing: `Pkg.add("Plots"); Pkg.checkout("Plots", "dev")`
+WARNING: OpenGL debug message callback not available on osx
+INFO: Caching fonts, this may take a while. Needed only on first run!
+WARNING: GLFW reports the following error: Cocoa: Failed to retrieve display name.
+This can be ignored on a headless system.
+WARNING: imfilter_gaussian(img, sigma; kwargs...) is deprecated; use `imfilter(img, KernelFactors.IIRGaussian(sigma; kwargs...))` instead, possibly with `NA()`
+ in depwarn(::String, ::Symbol) at ./deprecated.jl:64
+ in #imfilter_gaussian#33(::Bool, ::Void, ::Function, ::Array{ColorTypes.RGBA{Float32},2}, ::Array{Float32,1}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/ImageFiltering/src/deprecated.jl:77
+ in imfilter_gaussian(::Array{ColorTypes.RGBA{Float32},2}, ::Array{Float32,1}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/ImageFiltering/src/deprecated.jl:72
+ in myfilter(::Array{ColorTypes.RGBA{Float32},2}, ::Float32) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/gui/image_processing.jl:33
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/gui/image_processing.jl, in expression starting on line 39
+WARNING: redefining constant window
+LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at ./<missing>:0
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/imagelike/contourf.jl, in expression starting on line 34LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in _view(::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:34
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in _view(::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:71
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in _view(::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/imagelike/imageio.jl, in expression starting on line 54LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at ./<missing>:0
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/imagelike/parametric_fun.jl, in expression starting on line 22LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at ./<missing>:0
+ in main(::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/introduction/simulation.jl:159
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/introduction/simulation.jl, in expression starting on line 182LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in _view(::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:34
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in _view(::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:71
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in _view(::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/introduction/video_recording.jl, in expression starting on line 10LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at ./<missing>:0
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/lines/contourlines.jl, in expression starting on line 47LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in _view(::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:34
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in _view(::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:71
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in _view(::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74 (repeats 2 times)
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/lines/lines2D.jl, in expression starting on line 23LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at ./<missing>:0
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/lines/lines3D.jl, in expression starting on line 47LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at ./<missing>:0
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/lines/linesegments3d.jl, in expression starting on line 33LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at ./<missing>:0
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/lines/multilines.jl, in expression starting on line 25WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+in merge at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GeometryTypes/src/meshes.jl
+WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+in merge at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GeometryTypes/src/meshes.jl
+LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in _view(::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:34
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in _view(::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:71
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in _view(::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/meshes/meshcreation.jl, in expression starting on line 30LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in _view(::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:34
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in _view(::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:71
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in _view(::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/meshes/vertexcolor.jl, in expression starting on line 23LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at ./<missing>:0
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/meshes/wireframe.jl, in expression starting on line 29LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in _view(::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:34
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in _view(::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:71
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in _view(::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/particles/bars.jl, in expression starting on line 41LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::GLAbstraction.PerspectiveCamera{Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at ./<missing>:0
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/particles/cubicles.jl, in expression starting on line 57LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in _view(::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:34
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in _view(::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:71
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in _view(::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/particles/flow3D.jl, in expression starting on line 25LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in _view(::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:34
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in _view(::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:71
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in _view(::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/particles/particles.jl, in expression starting on line 41LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in _view(::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:34
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in _view(::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:71
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in _view(::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/particles/sphere1Drange.jl, in expression starting on line 18LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at ./<missing>:0
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/sprites/arrows.jl, in expression starting on line 24LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at ./<missing>:0 (repeats 2 times)
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/sprites/arrows3d.jl, in expression starting on line 21LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at ./<missing>:0
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/sprites/billboard.jl, in expression starting on line 24LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at ./<missing>:0
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/sprites/bouncy.jl, in expression starting on line 40LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in _view(::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:34
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in _view(::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:71
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in _view(::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/sprites/distancefield.jl, in expression starting on line 43LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in _view(::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:34
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in _view(::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:71
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in _view(::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/sprites/image_texture_atlas.jl, in expression starting on line 45LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at ./<missing>:0
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/sprites/letitsnow.jl, in expression starting on line 46LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at ./<missing>:0 (repeats 2 times)
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/sprites/mesmerizing.jl, in expression starting on line 40LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at ./<missing>:0
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/sprites/moving_bars.jl, in expression starting on line 37LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in _view(::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:34
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in _view(::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:71
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in _view(::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/sprites/moving_circles.jl, in expression starting on line 28LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in _view(::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:34
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in _view(::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:71
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in _view(::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/surfaces/juliaset.jl, in expression starting on line 48LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in _view(::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:34
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in _view(::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:71
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in _view(::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/surfaces/mesh.jl, in expression starting on line 38LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in _view(::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:34
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in _view(::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:71
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in _view(::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74 (repeats 2 times)
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/surfaces/surface.jl, in expression starting on line 25LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in _view(::GLAbstraction.RenderObject{GLAbstraction.StandardPrerender}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:34
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in _view(::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:71
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in _view(::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/text/annotations.jl, in expression starting on line 52LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLVisualize.##33#35{GLVisualize.##230#235}}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.RenderObject{GLVisualize.##33#35{GLVisualize.##230#235}}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at ./<missing>:0
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in (::GLVisualize.#kw##_view)(::Array{Any,1}, ::GLVisualize.#_view, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at ./<missing>:0
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/text/text.jl, in expression starting on line 40LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLVisualize.##33#35{GLVisualize.VolumePrerender}}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in _view(::GLAbstraction.RenderObject{GLVisualize.##33#35{GLVisualize.VolumePrerender}}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:34
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in _view(::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:71
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in _view(::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/volumes/maximum_intensity_projection.jl, in expression starting on line 30LoadError: KeyError: key :mouseinside not found
+ in getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:697
+ in #_view#24(::Symbol, ::FixedSizeArrays.Vec{3,Float32}, ::FixedSizeArrays.Vec{3,Float32}, ::Function, ::GLAbstraction.RenderObject{GLVisualize.##33#35{GLVisualize.VolumePrerender}}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:36
+ in _view(::GLAbstraction.RenderObject{GLVisualize.##33#35{GLVisualize.VolumePrerender}}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:34
+ in #_view#31(::Array{Any,1}, ::Function, ::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:72
+ in _view(::Array{GLAbstraction.RenderObject,1}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:71
+ in #_view#32(::Array{Any,1}, ::Function, ::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in _view(::GLAbstraction.Context{GLAbstraction.DeviceUnit}, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/visualize_interface.jl:74
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in anonymous at ./<missing>:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/examples/volumes/volume.jl, in expression starting on line 21ERROR: LoadError: LoadError: Tests did not pass!
+ in error(::String) at ./error.jl:21
+ in error(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in include_from_node1(::String) at ./loading.jl:488
+ in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:265
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+while loading /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/test_static.jl, in expression starting on line 136
+while loading /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/runtests.jl, in expression starting on line 15
+=============================[ ERROR: GLVisualize ]=============================
+
+failed process: Process(`/Users/julia/vchuravy/julia-0.5/usr/bin/julia -Cnative -J/Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib --compile=yes --depwarn=yes --check-bounds=yes --code-coverage=user --inline=no --color=no --compilecache=yes /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCZ0939/v0.5/GLVisualize/test/runtests.jl`, ProcessExited(1)) [1]
+
+================================================================================
+INFO: Removing Contour v0.2.0
+INFO: Removing DocStringExtensions v0.3.1
+INFO: Removing Highlights v0.2.1
+INFO: Removing ImageMagick v0.2.2
+ERROR: GLVisualize had test errors
+ in #test#61(::Bool, ::Function, ::Array{AbstractString,1}) at ./pkg/entry.jl:749
+ in (::Base.Pkg.Entry.#kw##test)(::Array{Any,1}, ::Base.Pkg.Entry.#test, ::Array{AbstractString,1}) at ./<missing>:0
+ in (::Base.Pkg.Dir.##2#3{Array{Any,1},Base.Pkg.Entry.#test,Tuple{Array{AbstractString,1}}})() at ./pkg/dir.jl:31
+ in cd(::Base.Pkg.Dir.##2#3{Array{Any,1},Base.Pkg.Entry.#test,Tuple{Array{AbstractString,1}}}, ::String) at ./file.jl:59
+ in #cd#1(::Array{Any,1}, ::Function, ::Function, ::Array{AbstractString,1}, ::Vararg{Array{AbstractString,1},N}) at ./pkg/dir.jl:31
+ in (::Base.Pkg.Dir.#kw##cd)(::Array{Any,1}, ::Base.Pkg.Dir.#cd, ::Function, ::Array{AbstractString,1}, ::Vararg{Array{AbstractString,1},N}) at ./<missing>:0
+ in #test#3(::Bool, ::Function, ::String, ::Vararg{String,N}) at ./pkg/pkg.jl:258
+ in (::Base.Pkg.#kw##test)(::Array{Any,1}, ::Base.Pkg.#test, ::String, ::Vararg{String,N}) at ./<missing>:0
+ in eval(::Module, ::Any) at ./boot.jl:234
+ in eval(::Module, ::Any) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in process_options(::Base.JLOptions) at ./client.jl:242
+ in _start() at ./client.jl:321
+ in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
