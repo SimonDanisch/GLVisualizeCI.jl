@@ -5,15 +5,14 @@ import GitHub, HttpCommon
 dir(paths...) = normpath(joinpath(dirname(@__FILE__), "..", paths...))
 
 function push_status(pr)
-    cd(GLVisualizeCI.dir()) do
-        try
-            run(`git pull origin master`)
-            run(`git add .`)
-            run(`git commit -m $("update")`)
-            run(`git push origin master`)
-        catch e
-            warn("couldn't update report: $e")
-        end
+    try
+        repo = LibGit2.GitRepo(GLVisualizeCI.dir())
+        LibGit2.fetch!(repo)
+        LibGit2.add!(repo, ".")
+        LibGit2.commit(repo, "update $pr")
+        LibGit2.push(repo, refspecs = ["refs/heads/master"])
+    catch e
+        warn("couldn't update report for $pr: $e")
     end
 end
 
