@@ -9,23 +9,23 @@ INFO: Installing Highlights v0.2.1
 INFO: Installing ImageMagick v0.2.2
 INFO: Building Homebrew
 INFO: Building ImageMagick
-Warning: Already linked: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/Homebrew/deps/usr/Cellar/xz/5.2.3
-Warning: Already linked: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/Homebrew/deps/usr/Cellar/jpeg/8d
-Warning: Already linked: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/Homebrew/deps/usr/Cellar/libtiff/4.0.7_2
-Warning: Already linked: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/Homebrew/deps/usr/Cellar/libtool/2.4.6_1
+Warning: Already linked: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/Homebrew/deps/usr/Cellar/xz/5.2.3
+Warning: Already linked: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/Homebrew/deps/usr/Cellar/jpeg/8d
+Warning: Already linked: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/Homebrew/deps/usr/Cellar/libtiff/4.0.7_2
+Warning: Already linked: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/Homebrew/deps/usr/Cellar/libtool/2.4.6_1
 INFO: Testing GLVisualize
+Previous HEAD position was be433da... remove failing
+Switched to branch 'master'
 WARNING: GLFW reports the following error: Cocoa: Failed to retrieve display name.
 This can be ignored on a headless system.
 WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
-  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/GeometryTypes/src/typealias.jl:90
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GeometryTypes/src/typealias.jl:90
 WARNING: GLFW reports the following error: Cocoa: Failed to retrieve display name.
 This can be ignored on a headless system.
 WARNING: GLFW reports the following error: Cocoa: Failed to retrieve display name.
 This can be ignored on a headless system.
 WARNING: GLFW reports the following error: Cocoa: Failed to retrieve display name.
 This can be ignored on a headless system.
-Previous HEAD position was be433da... remove failing
-Switched to branch 'master'
 WARNING: Plots.jl is not installed, excluding a lot of interesting examples from the tests
     and a nice summary.
 Please consider doing: `Pkg.add("Plots"); Pkg.checkout("Plots", "dev")`
@@ -35,16 +35,16 @@ WARNING: GLFW reports the following error: Cocoa: Failed to retrieve display nam
 This can be ignored on a headless system.
 WARNING: imfilter_gaussian(img, sigma; kwargs...) is deprecated; use `imfilter(img, KernelFactors.IIRGaussian(sigma; kwargs...))` instead, possibly with `NA()`
  in depwarn(::String, ::Symbol) at ./deprecated.jl:64
- in #imfilter_gaussian#33(::Bool, ::Void, ::Function, ::Array{ColorTypes.RGBA{Float32},2}, ::Array{Float32,1}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/ImageFiltering/src/deprecated.jl:77
- in imfilter_gaussian(::Array{ColorTypes.RGBA{Float32},2}, ::Array{Float32,1}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/ImageFiltering/src/deprecated.jl:72
- in myfilter(::Array{ColorTypes.RGBA{Float32},2}, ::Float32) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/GLVisualize/examples/gui/image_processing.jl:33
+ in #imfilter_gaussian#33(::Bool, ::Void, ::Function, ::Array{ColorTypes.RGBA{Float32},2}, ::Array{Float32,1}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/ImageFiltering/src/deprecated.jl:77
+ in imfilter_gaussian(::Array{ColorTypes.RGBA{Float32},2}, ::Array{Float32,1}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/ImageFiltering/src/deprecated.jl:72
+ in myfilter(::Array{ColorTypes.RGBA{Float32},2}, ::Float32) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GLVisualize/examples/gui/image_processing.jl:33
  in include_from_node1(::String) at ./loading.jl:488
  in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
  in eval(::Module, ::Any) at ./boot.jl:234
- in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
- in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
- in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
- in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GLVisualize/test/test_static.jl:87 [inlined]
  in anonymous at ./<missing>:?
  in include_from_node1(::String) at ./loading.jl:488
  in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
@@ -53,23 +53,43 @@ WARNING: imfilter_gaussian(img, sigma; kwargs...) is deprecated; use `imfilter(i
  in process_options(::Base.JLOptions) at ./client.jl:265
  in _start() at ./client.jl:321
  in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
-while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/GLVisualize/examples/gui/image_processing.jl, in expression starting on line 39
-LoadError: could not spawn `ffmpeg -f rawvideo -pixel_format rgb24 -s:v 1483x1483 -i pipe:0 -vf vflip -y /Users/julia/.julia/v0.5/GLVisualizeCI/reports/macmini/GLVisualize/155/videorecord.mkv/ygk4S00j.mkv`: no such file or directory (ENOENT)
- in _jl_spawn(::String, ::Array{String,1}, ::Ptr{Void}, ::Base.Process, ::Base.PipeEndpoint, ::Base.DevNullStream, ::Ptr{Void}) at ./process.jl:321
- in (::Base.##424#425{Cmd,Ptr{Void},Base.Process})(::Base.PipeEndpoint, ::Base.DevNullStream, ::Ptr{Void}) at ./process.jl:478
- in setup_stdio(::Base.##424#425{Cmd,Ptr{Void},Base.Process}, ::Tuple{Pipe,Base.DevNullStream,Base.PipeEndpoint}) at ./process.jl:466
- in #spawn#423(::Nullable{Base.ProcessChain}, ::Function, ::Cmd, ::Tuple{Pipe,Base.DevNullStream,Base.PipeEndpoint}, ::Bool, ::Bool) at ./process.jl:477
- in (::Base.#kw##spawn)(::Array{Any,1}, ::Base.#spawn, ::Cmd, ::Tuple{Pipe,Base.DevNullStream,Base.PipeEndpoint}, ::Bool, ::Bool) at ./<missing>:0
- in open(::Cmd, ::String, ::Base.DevNullStream) at ./process.jl:544
- in open(::Cmd, ::String) at ./process.jl:536
- in create_video_stream(::String, ::GLWindow.Screen) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/GLVisualize/src/videotool.jl:12
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GLVisualize/examples/gui/image_processing.jl, in expression starting on line 39
+ffmpeg version 3.2.4 Copyright (c) 2000-2017 the FFmpeg developers
+  built with Apple LLVM version 8.0.0 (clang-800.0.42.1)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.2.4 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-libmp3lame --enable-libx264 --enable-libxvid --enable-opencl --disable-lzma --enable-vda
+  libavutil      55. 34.101 / 55. 34.101
+  libavcodec     57. 64.101 / 57. 64.101
+  libavformat    57. 56.101 / 57. 56.101
+  libavdevice    57.  1.100 / 57.  1.100
+  libavfilter     6. 65.100 /  6. 65.100
+  libavresample   3.  1.  0 /  3.  1.  0
+  libswscale      4.  2.100 /  4.  2.100
+  libswresample   2.  3.100 /  2.  3.100
+  libpostproc    54.  1.100 / 54.  1.100
+Input #0, rawvideo, from 'pipe:0':
+  Duration: N/A, start: 0.000000, bitrate: 1319573 kb/s
+    Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1483x1483, 1319573 kb/s, 25 tbr, 25 tbn, 25 tbc
+/Users/julia/.julia/v0.5/GLVisualizeCI/reports/macmini/GLVisualize/155/videorecord.mkv/8EbDZKWE.mkv: No such file or directory
+LoadError: write: broken pipe (EPIPE)
+ in yieldto(::Task, ::ANY) at ./event.jl:136
+ in yieldto(::Task, ::ANY) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
+ in wait() at ./event.jl:169
+ in stream_wait(::Task) at ./stream.jl:44
+ in uv_write(::Base.PipeEndpoint, ::Ptr{UInt8}, ::UInt64) at ./stream.jl:820
+ in unsafe_write(::Base.PipeEndpoint, ::Ptr{UInt8}, ::UInt64) at ./stream.jl:830
+ in unsafe_write(::Pipe, ::Ptr{UInt8}, ::UInt64) at ./io.jl:83
+ in unsafe_write(::Pipe, ::Ptr{ColorTypes.RGB{FixedPointNumbers.Normed{UInt8,8}}}, ::Int64) at ./io.jl:156
+ in write(::Pipe, ::Array{ColorTypes.RGB{FixedPointNumbers.Normed{UInt8,8}},2}) at ./io.jl:180
+ in add_frame!(::Pipe, ::GLWindow.Screen, ::Array{ColorTypes.RGB{FixedPointNumbers.Normed{UInt8,8}},2}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GLVisualize/src/videotool.jl:22
+ in macro expansion; at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GLVisualize/examples/introduction/video_recording.jl:38 [inlined]
+ in anonymous at ./<missing>:?
  in include_from_node1(::String) at ./loading.jl:488
  in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
  in eval(::Module, ::Any) at ./boot.jl:234
- in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
- in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
- in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
- in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/GLVisualize/test/test_static.jl:82 [inlined]
+ in eval(::Expr) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:6
+ in include_in_module(::Symbol, ::ExampleRunner.RunnerConfig, ::String, ::GLWindow.Screen, ::Reactive.Signal{Float32}) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:345
+ in _test_include(::String, ::ExampleRunner.RunnerConfig) at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GLVisualize/src/../examples/ExampleRunner.jl:368
+ in macro expansion; at /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GLVisualize/test/test_static.jl:87 [inlined]
  in anonymous at ./<missing>:?
  in include_from_node1(::String) at ./loading.jl:488
  in include_from_node1(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
@@ -78,32 +98,32 @@ LoadError: could not spawn `ffmpeg -f rawvideo -pixel_format rgb24 -s:v 1483x148
  in process_options(::Base.JLOptions) at ./client.jl:265
  in _start() at ./client.jl:321
  in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
-while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/GLVisualize/examples/introduction/video_recording.jl, in expression starting on line 25WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
-  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+while loading /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GLVisualize/examples/introduction/video_recording.jl, in expression starting on line 25WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
 WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
-  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
 WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
-  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
 WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
-  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
 WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
-  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
 WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
-  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
 WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
-  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
 WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
-  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
 WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
-  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
 WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
-  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
 WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
-  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
-in merge at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/GeometryTypes/src/meshes.jl
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+in merge at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GeometryTypes/src/meshes.jl
 WARNING: ColorTypes.U8 is deprecated, use FixedPointNumbers.Normed{UInt8, 8} instead.
-  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
-in merge at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/GeometryTypes/src/meshes.jl
+  likely near /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GLVisualize/examples/meshes/meshcreation.jl:29
+in merge at /var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GeometryTypes/src/meshes.jl
 ERROR: LoadError: LoadError: Tests did not pass!
  in error(::String) at ./error.jl:21
  in error(::String) at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
@@ -114,11 +134,11 @@ ERROR: LoadError: LoadError: Tests did not pass!
  in process_options(::Base.JLOptions) at ./client.jl:265
  in _start() at ./client.jl:321
  in _start() at /Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib:?
-while loading /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/GLVisualize/test/test_static.jl, in expression starting on line 136
-while loading /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/GLVisualize/test/runtests.jl, in expression starting on line 16
+while loading /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GLVisualize/test/test_static.jl, in expression starting on line 141
+while loading /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GLVisualize/test/runtests.jl, in expression starting on line 14
 =============================[ ERROR: GLVisualize ]=============================
 
-failed process: Process(`/Users/julia/vchuravy/julia-0.5/usr/bin/julia -Cnative -J/Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib --compile=yes --depwarn=yes --check-bounds=yes --code-coverage=user --inline=no --color=no --compilecache=yes /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/GLVisualize/test/runtests.jl`, ProcessExited(1)) [1]
+failed process: Process(`/Users/julia/vchuravy/julia-0.5/usr/bin/julia -Cnative -J/Users/julia/vchuravy/julia-0.5/usr/lib/julia/sys.dylib --compile=yes --depwarn=yes --check-bounds=yes --code-coverage=user --inline=no --color=no --compilecache=yes /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/GLVisualize/test/runtests.jl`, ProcessExited(1)) [1]
 
 ================================================================================
 INFO: Removing Contour v0.2.0

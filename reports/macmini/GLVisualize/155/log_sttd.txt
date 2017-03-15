@@ -2,17 +2,17 @@ Already up-to-date.
 ==> Downloading https://homebrew.bintray.com/bottles/xz-5.2.3.el_capitan.bottle.tar.gz
 Already downloaded: /Users/julia/Library/Caches/Homebrew.jl/xz-5.2.3.el_capitan.bottle.tar.gz
 ==> Pouring xz-5.2.3.el_capitan.bottle.tar.gz
-🍺  /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/Homebrew/deps/usr/Cellar/xz/5.2.3: 92 files, 1.4MB
+🍺  /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/Homebrew/deps/usr/Cellar/xz/5.2.3: 92 files, 1.4MB
 ==> Installing jpeg from staticfloat/juliatranslated
 ==> Downloading https://homebrew.bintray.com/bottles/jpeg-8d.el_capitan.bottle.2.tar.gz
 Already downloaded: /Users/julia/Library/Caches/Homebrew.jl/jpeg-8d.el_capitan.bottle.2.tar.gz
 ==> Pouring jpeg-8d.el_capitan.bottle.2.tar.gz
-🍺  /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/Homebrew/deps/usr/Cellar/jpeg/8d: 19 files, 714KB
+🍺  /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/Homebrew/deps/usr/Cellar/jpeg/8d: 19 files, 714KB
 ==> Installing libtiff from staticfloat/juliatranslated
 ==> Downloading https://homebrew.bintray.com/bottles/libtiff-4.0.7_2.el_capitan.bottle.tar.gz
 Already downloaded: /Users/julia/Library/Caches/Homebrew.jl/libtiff-4.0.7_2.el_capitan.bottle.tar.gz
 ==> Pouring libtiff-4.0.7_2.el_capitan.bottle.tar.gz
-🍺  /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/Homebrew/deps/usr/Cellar/libtiff/4.0.7_2: 248 files, 3.4MB
+🍺  /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/Homebrew/deps/usr/Cellar/libtiff/4.0.7_2: 248 files, 3.4MB
 ==> Installing libtool from staticfloat/juliatranslated
 ==> Downloading https://homebrew.bintray.com/bottles/libtool-2.4.6_1.el_capitan.bottle.tar.gz
 Already downloaded: /Users/julia/Library/Caches/Homebrew.jl/libtool-2.4.6_1.el_capitan.bottle.tar.gz
@@ -21,28 +21,29 @@ Already downloaded: /Users/julia/Library/Caches/Homebrew.jl/libtool-2.4.6_1.el_c
 In order to prevent conflicts with Apple's own libtool we have prepended a "g"
 so, you have instead: glibtool and glibtoolize.
 ==> Summary
-🍺  /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/Homebrew/deps/usr/Cellar/libtool/2.4.6_1: 70 files, 3.7MB
+🍺  /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/Homebrew/deps/usr/Cellar/libtool/2.4.6_1: 70 files, 3.7MB
 ==> Installing imagemagick@6 from staticfloat/juliatranslated
 ==> Downloading https://homebrew.bintray.com/bottles/imagemagick@6-6.9.8-0.el_capitan.bottle.tar.gz
 Already downloaded: /Users/julia/Library/Caches/Homebrew.jl/imagemagick@6-6.9.8-0.el_capitan.bottle.tar.gz
 ==> Pouring imagemagick@6-6.9.8-0.el_capitan.bottle.tar.gz
 ==> Caveats
-This formula is keg-only, which means it was not symlinked into /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/Homebrew/deps/usr.
+This formula is keg-only, which means it was not symlinked into /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/Homebrew/deps/usr.
 
 Older version of imagemagick
 
 If you need to have this software first in your PATH run:
-  echo 'export PATH="/private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/Homebrew/deps/usr/opt/imagemagick@6/bin:$PATH"' >> ~/.bash_profile
+  echo 'export PATH="/private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/Homebrew/deps/usr/opt/imagemagick@6/bin:$PATH"' >> ~/.bash_profile
 
 For compilers to find this software you may need to set:
-    LDFLAGS:  -L/private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/Homebrew/deps/usr/opt/imagemagick@6/lib
-    CPPFLAGS: -I/private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/Homebrew/deps/usr/opt/imagemagick@6/include
+    LDFLAGS:  -L/private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/Homebrew/deps/usr/opt/imagemagick@6/lib
+    CPPFLAGS: -I/private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/Homebrew/deps/usr/opt/imagemagick@6/include
 For pkg-config to find this software you may need to set:
-    PKG_CONFIG_PATH: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/Homebrew/deps/usr/opt/imagemagick@6/lib/pkgconfig
+    PKG_CONFIG_PATH: /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/Homebrew/deps/usr/opt/imagemagick@6/lib/pkgconfig
 
 ==> Summary
-🍺  /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpCB5v3R/v0.5/Homebrew/deps/usr/Cellar/imagemagick@6/6.9.8-0: 1,469 files, 22.7MB
+🍺  /private/var/folders/g8/96t76vbx45s4h90zvkwnt2800000gn/T/tmpkkOCpZ/v0.5/Homebrew/deps/usr/Cellar/imagemagick@6/6.9.8-0: 1,469 files, 22.7MB
 Your branch is up-to-date with 'origin/master'.
+GLVisualize._downsample_rate = 1
 rotate_robj.jl
 Now showing rotate_robj.jl:
 
