@@ -29,11 +29,6 @@ gitclone!(repo, path) = run(`git clone https://github.com/$(repo).git $(path)`)
 
 function test_pr(package, repo, pr)
     mktempdir() do path
-        # ORIGINAL_STDOUT = STDOUT
-        # out_rd, out_wr = redirect_stdout()
-        # ORIGINAL_STDERR = STDERR
-        # err_rd, err_wr = redirect_stderr()
-
         cd(homedir()) # make sure, we're in a concrete folder
         # init a new julia package repository
         ENV["JULIA_PKGDIR"] = path
@@ -58,26 +53,14 @@ function test_pr(package, repo, pr)
         logsterr = ENV["CI_REPORT_DIR"] * "/log_sterr.txt"
         testcmd = `$julia_exe -e $("Pkg.test(\"$package\", coverage = true)")`
         coveragecmd = `$julia_exe $(dir("src", "submit_coverage.jl"))`
-        run(pipeline(testcmd, stdout = `tee $logstd`, stderr = `tee $logsterr`))
-        run(pipeline(coveragecmd, stdout = `tee $logstd`, stderr = `tee $logsterr`))
-
-        # save io output!
-        # log_stdio = String(readavailable(out_rd))
-        # log_errsdio = String(readavailable(err_rd))
-        # close(out_rd); close(err_rd)
-        #
-        # REDIRECTED_STDOUT = STDOUT
-        # out_stream = redirect_stdout(ORIGINAL_STDOUT)
-        # REDIRECTED_STDERR = STDERR
-        # err_stream = redirect_stderr(ORIGINAL_STDERR)
-        #
-        # path = ENV["CI_REPORT_DIR"]
-        # open(joinpath(path, "stdiolog.txt"), "w") do io
-        #     println(io, log_stdio)
-        # end
-        # open(joinpath(path, "errorlog.txt"), "w") do io
-        #     println(io, log_errsdio)
-        # end
+        try
+            run(pipeline(testcmd, stdout = `tee $logstd`, stderr = `tee $logsterr`))
+            run(pipeline(coveragecmd, stdout = `tee $logstd`, stderr = `tee $logsterr`))
+        catch
+            println("Test not succesful!")
+            return false
+        end
+        return true
     end
 end
 
@@ -108,12 +91,12 @@ function handle_event(name, event, auth)
             "description" => "Running CI...",
             "target_url" => target_url
         ))
+        success = false
         try
-
             ENV["CI_REPORT_DIR"] = path
             ENV["CI"] = "true"
-            test_pr(package, get(repo.full_name), pr)
-
+            success = test_pr(package, get(repo.full_name), pr)
+            push_status(pr)
         catch err
             GitHub.create_status(repo, sha; auth = auth, params = Dict(
                 "state" => "error",
@@ -123,11 +106,10 @@ function handle_event(name, event, auth)
             ))
             return HttpCommon.Response(500)
         end
-
         GitHub.create_status(repo, sha; auth = auth, params = Dict(
-            "state" => "success",
+            "state" => success ? "success" : "failure",
             "context" => name,
-            "description" => "CI complete!",
+            "description" => "Build has finished.",
             "target_url" => target_url
         ))
         return HttpCommon.Response(202, "success")
